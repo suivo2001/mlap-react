@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
+
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import PatientGuide from './pages/PatientGuide'
+import About from './pages/About'
+import DoctorFinder from './pages/DoctorFinder'
+import Contact from './pages/Contact'
+import Advocacy from './pages/Advocacy'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <div>
+        <Router>
+          <Switch>
+            <Route path='/patient-guide'>
+              <PatientGuide />
+            </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
+            <Route path='/advocacy'>
+              <Advocacy />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
+            <Route path='/doctor-finder'>
+              <DoctorFinder />
+            </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+
+      </div>
+      <Footer/>
     </div>
   );
 }

@@ -21,19 +21,19 @@ function App() {
       <div>
         <Router>
           <Switch>
-            <Route path='/patient-guide'>
+            <Route path='/mlap-react/patient-guide'>
               <PatientGuide />
             </Route>
-            <Route path='/about'>
+            <Route path='/mlap-react/about'>
               <About />
             </Route>
-            <Route path='/advocacy'>
+            <Route path='/mlap-react/advocacy'>
               <Advocacy />
             </Route>
-            <Route path='/contact'>
+            <Route path='/mlap-react/contact'>
               <Contact />
             </Route>
-            <Route path='/doctor-finder'>
+            <Route path='/mlap-react/doctor-finder'>
               <DoctorFinder />
             </Route>
             <Route path='/'>

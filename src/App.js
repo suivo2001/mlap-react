@@ -18,31 +18,28 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div>
-        <Router>
+
           <Switch>
-            <Route path='/mlap-react/patient-guide'>
+            <Route path='/patient-guide'>
               <PatientGuide />
             </Route>
-            <Route path='/mlap-react/about'>
+            <Route path='/about'>
               <About />
             </Route>
-            <Route path='/mlap-react/advocacy'>
+            <Route path='/advocacy'>
               <Advocacy />
             </Route>
-            <Route path='/mlap-react/contact'>
+            <Route path='/contact'>
               <Contact />
             </Route>
-            <Route path='/mlap-react/doctor-finder'>
+            <Route path='/doctor-finder'>
               <DoctorFinder />
             </Route>
             <Route path='/'>
               <Home />
             </Route>
           </Switch>
-        </Router>
-
-      </div>
+       
       <Footer/>
     </div>
   );

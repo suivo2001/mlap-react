@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mlap-react/static/js/main.336b6fc1.chunk.js",
-    "main.js.map": "/mlap-react/static/js/main.336b6fc1.chunk.js.map",
+    "main.js": "/mlap-react/static/js/main.251658b1.chunk.js",
+    "main.js.map": "/mlap-react/static/js/main.251658b1.chunk.js.map",
     "runtime-main.js": "/mlap-react/static/js/runtime-main.7256b9fc.js",
     "runtime-main.js.map": "/mlap-react/static/js/runtime-main.7256b9fc.js.map",
     "static/css/2.09ef058d.chunk.css": "/mlap-react/static/css/2.09ef058d.chunk.css",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7256b9fc.js",
     "static/css/2.09ef058d.chunk.css",
     "static/js/2.4cf9f303.chunk.js",
-    "static/js/main.336b6fc1.chunk.js"
+    "static/js/main.251658b1.chunk.js"
   ]
 }

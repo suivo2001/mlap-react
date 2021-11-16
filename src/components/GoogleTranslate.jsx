@@ -11,7 +11,7 @@ const GoogleTranslate = () => {
       });
     
       return (
-        <div className='nav-item mt-3' id="google_translate_element"></div>
+        <div className='nav-item mt-3 ml-5' id="google_translate_element"></div>
       );
 }
 

@@ -4,6 +4,13 @@ import PeopleCard from '../components/PeopleCard'
 
 import Background from '../images/doctor-background.png'
 import JohnLinImage from '../images/John-Lin.jpeg'
+import JasonLinImage from '../images/Jason-Lin.jpeg'
+import MariaChiaramonteImage from '../images/Maria-Chiaramonte.jpg'
+import DanielWangImage from '../images/Daniel-Wang.jpeg'
+import CobyNguyenImage from '../images/Coby-Nguyen.jpeg'
+import AudreyNguyenImage from '../images/Audrey-Nguyen.jpg'
+import MiaWilliamsImage from '../images/Mia-Williams.JPG'
+import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
 
 const About = () => {
     return (
@@ -24,18 +31,18 @@ const About = () => {
                         <p className='content is-flex is-justify-content-center'>Here is our team:</p>
                         <div className='container is-flex mx-6'>
                             <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
+                            <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage}/>
+                            <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage}/>
                         </div>
                         <div className='container is-flex mx-6'>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
+                            <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage}/>
+                            <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage}/>
+                            <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage}/>
                         </div>
                         <div className='container is-flex mx-6'>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
+                            <PeopleCard name='Audrey Nguyen' location="University of Houston" content="Director for Vietnamese Services" image={AudreyNguyenImage}/>
+                            <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Policy Director" image={CobyNguyenImage}/>
+                            
                         </div>
                     </div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const PeopleCard = ({name, location, content, image}) => {
     return (
-        <div className="card m-6">
+        <div className="card mx-2 my-6">
             <div classNameName="card-image">
                 <figure className="image is-256x256">
                     <img src={image} alt={name}/>

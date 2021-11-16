@@ -15,7 +15,7 @@ import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
 const About = () => {
     return (
         <div>
-            <div className='section is-medium' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
+            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
                 <h1 className='title is-flex is-justify-content-center has-text-white'>About Medical Literact Access Project</h1>
             </div>
             <div className='section has-background-light'>
@@ -29,21 +29,26 @@ const About = () => {
                 <div className='container is-flex is-justify-content-center mx-6'>
                     <div>
                         <p className='content is-flex is-justify-content-center'>Here is our team:</p>
-                        <div className='container is-flex mx-6'>
-                            <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
-                            <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage}/>
-                            <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage}/>
+                        <div className='columns'>
+                            <div className='column'>
+                                <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage} />
+                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
+                            </div>
+
+                            <div className='column'>
+                                <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Policy Director" image={CobyNguyenImage} />
+                                <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
+                                <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
+                                
+                            </div>
+                            <div className='column'>
+                                <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
+                                <PeopleCard name='Audrey Nguyen' location="University of Houston" content="Director for Vietnamese Services" image={AudreyNguyenImage} />
+                                
+                            </div>
                         </div>
-                        <div className='container is-flex mx-6'>
-                            <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage}/>
-                            <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage}/>
-                            <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage}/>
-                        </div>
-                        <div className='container is-flex mx-6'>
-                            <PeopleCard name='Audrey Nguyen' location="University of Houston" content="Director for Vietnamese Services" image={AudreyNguyenImage}/>
-                            <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Policy Director" image={CobyNguyenImage}/>
-                            
-                        </div>
+
                     </div>
 
                 </div>

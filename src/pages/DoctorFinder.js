@@ -56,10 +56,9 @@ const DoctorFinder = () => {
     return (
         <div>
             <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
-                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>We provide a doctor finder tool in collaboration with U.S. News & World Report. We have translated this tool into Chinese and Spanish.</h1>
-            </div>
-            <div className='section is-flex is-justify-content-center has-background-light'>
-                <a href={USNEWS} target='_blank'>Link to US News & World Report website</a>
+                <h1 className='title has-text-centered has-text-white mx-6'>We provide a doctor finder tool in collaboration with 
+                <a href={USNEWS} target='_blank'> U.S. News & World Report. </a>
+               We have translated this tool into Chinese and Spanish.</h1>
             </div>
             <div className='section is-flex is-justify-content-center'>
                 <form onSubmit={handleSubmit}>

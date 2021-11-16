@@ -21,7 +21,7 @@ const About = () => {
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
                     <p className='content has-text-centered mx-6 my-3'>We are a nonprofit organization founded in May 2021 to promote health and welfare among medically underserved patients through patient guides, advocacy, and research. We are overseen by an inclusive board of directors including health providers, patients, advocates, and students. If you have any suggestions or thoughts on improving our resources and programs, please
-                        <a> let us know!</a>
+                        <a href='/contact'> let us know!</a>
                     </p>
                 </div>
             </div>

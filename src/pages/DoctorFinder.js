@@ -6,7 +6,7 @@ import SpecialtyCSV from '../spreadsheets/specialties.csv'
 import CitiesCSV from '../spreadsheets/cities.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
 
-const USNEWS = 'https://health.usnews.com/doctors/search?'
+const USNEWS = 'https://health.usnews.com/doctors'
 
 const getCSV = async (fileName) => {
     const response = await fetch(fileName);
@@ -47,7 +47,7 @@ const DoctorFinder = () => {
         console.log(selectedGender)
         console.log(selectedLanguage)
         window.open(
-            `${USNEWS}distance=20&sort=distance${selectedSpecialty?`&specialty=${selectedSpecialty}`:''}${selectedLocation?`&location=${selectedLocation}`:''}${selectedGender?`&gender=${selectedGender}`:''}${selectedLanguage?`&language=${selectedLanguage}`:''}`,
+            `${USNEWS}/search?distance=20&sort=distance${selectedSpecialty?`&specialty=${selectedSpecialty}`:''}${selectedLocation?`&location=${selectedLocation}`:''}${selectedGender?`&gender=${selectedGender}`:''}${selectedLanguage?`&language=${selectedLanguage}`:''}`,
             '_blank' // <- This is what makes it open in a new window.
           );
         event.preventDefault()
@@ -57,6 +57,9 @@ const DoctorFinder = () => {
         <div>
             <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
                 <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>We provide a doctor finder tool in collaboration with U.S. News & World Report. We have translated this tool into Chinese and Spanish.</h1>
+            </div>
+            <div className='section is-flex is-justify-content-center has-background-light'>
+                <a href={USNEWS} target='_blank'>Link to US News & World Report website</a>
             </div>
             <div className='section is-flex is-justify-content-center'>
                 <form onSubmit={handleSubmit}>

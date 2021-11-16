@@ -19,11 +19,25 @@ const Advocacy = () => {
                 <div className='container is-flex is-justify-content-center'>
                     <div>
                         <h1 className='title is-4 is-flex is-justify-content-center'><b>Price transparency</b></h1>
-                        <p className='content is-flex is-justify-content-center has-text-centered mx-6'>Studies show that hospitals are not adhering to United States (US) federal laws requiring price disclosures for shoppable services, including COVID-19 testing, thyroid cancer care, and oncologic surgery. MLAP is conducting a study on price transparency among academic hospitals in the US.</p>
+                        <p className='content has-text-centered mx-6'>Studies show that hospitals are not adhering to United States (US) federal laws requiring price disclosures for shoppable services, including 
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/32948951/" target='_blank'> COVID-19 testing, </a> 
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/34086052/" target='_blank'> thyroid cancer care, </a>
+                        and 
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/33851977/" target='_blank'> oncologic surgery. </a>
+                        MLAP is conducting a study on price transparency among academic hospitals in the US.</p>
                         <h1 className='title is-4 is-flex is-justify-content-center pt-5'><b>Health disparities</b></h1>
-                        <p className='content is-flex is-justify-content-center has-text-centered mx-6'>Racial, ethnic, sexual, and gender minorities often have poorer health outcomes. MLAP is conducting research on medical access and outcomes for Native Hawaiians and Pacific Islanders in the US, a very understudied minority population.</p>
+                        <p className='content has-text-centered mx-6'>
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138511" target='_blank'>Racial, ethnic,</a>
+                        <a href="https://psycnet.apa.org/doiLanding?doi=10.1037%2Fsah0000055" target='_blank'> sexual, and gender minorities</a>
+                         often have poorer health outcomes. MLAP is conducting research on medical access and outcomes for Native Hawaiians and Pacific Islanders in the US, a very understudied minority population.</p>
                         <h1 className='title is-4 is-flex is-justify-content-center pt-5'><b>Research disparities</b></h1>
-                        <p className='content is-flex is-justify-content-center has-text-centered mx-6'>Recent research by MLAP Executive Director John Lin, published in Clinical & Experimental Ophthalmology, identified that most presenters of retina abstracts were male and from high-income countries, potentially contributing to disparities in research such as research funding and research knowledge.</p>
+                        <p className='content has-text-centered mx-6'>Recent research by MLAP Executive Director John Lin, published in 
+                        <a href="https://onlinelibrary.wiley.com/doi/10.1111/ceo.13986" target='_blank'> Clinical & Experimental Ophthalmology, </a> 
+                        identified that most presenters of retina abstracts were male and from high-income countries, potentially contributing to disparities in research such as 
+                        <a href="https://www.science.org/doi/10.1126/science.1165878" target='_blank'> research funding </a>
+                        and 
+                        <a href="https://www.nature.com/articles/504211a" target='_blank'> research knowledge.</a>
+                        </p>
                     </div>
                 </div>
             </div>

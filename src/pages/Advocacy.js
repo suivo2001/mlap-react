@@ -6,8 +6,14 @@ const Advocacy = () => {
     return (
         <div>
             <div className='section is-medium' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
-                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Our policy & advocacy section is dedicated to covering issues and solutions in medical literacy and access. We conduct health disparities research and work with clinics, hospitals, and policymakers to provide language services.
+                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Our policy & advocacy section is dedicated to covering issues and solutions in medical literacy and access. 
                 </h1>
+            </div>
+            <div className='section has-background-light'>
+                <div className='container is-flex is-justify-content-center '>
+                    <p className='content has-text-centered mx-6 my-3'>We conduct health disparities research and work with clinics, hospitals, and policymakers to provide language services.
+                    </p>
+                </div>
             </div>
             <div className='section '>
                 <div className='container is-flex is-justify-content-center'>

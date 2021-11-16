@@ -21,7 +21,7 @@ const About = () => {
             <div className='section'>
                 <div className='container is-flex is-justify-content-center mx-6'>
                     <div>
-                        <p className='content is-flex is-justify-content-center'>Here is our team</p>
+                        <p className='content is-flex is-justify-content-center'>Here is our team:</p>
                         <div className='container is-flex mx-6'>
                             <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>
                             <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage}/>

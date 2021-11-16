@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
@@ -18,29 +17,27 @@ function App() {
   return (
     <div>
       <Navbar />
-
-          <Switch>
-            <Route path='/patient-guide'>
-              <PatientGuide />
-            </Route>
-            <Route path='/about'>
-              <About />
-            </Route>
-            <Route path='/advocacy'>
-              <Advocacy />
-            </Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-            <Route path='/doctor-finder'>
-              <DoctorFinder />
-            </Route>
-            <Route path='/'>
-              <Home />
-            </Route>
-          </Switch>
-       
-      <Footer/>
+      <Switch>
+        <Route path='/patient-guide'>
+          <PatientGuide />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/advocacy'>
+          <Advocacy />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/doctor-finder'>
+          <DoctorFinder />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
 }

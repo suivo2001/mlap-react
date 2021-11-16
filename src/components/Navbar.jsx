@@ -1,13 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import GoogleTranslate from './GoogleTranslate'
 
 const Navbar = () => {
 
-    const [isActive, setIsActive] = useState(false)
-
     const setActive = () => {
-        const burgerIcon = document.querySelector('#burger')
         const navbarMenu = document.querySelector('#nav-links')
         navbarMenu.classList.toggle('is-active')
     }

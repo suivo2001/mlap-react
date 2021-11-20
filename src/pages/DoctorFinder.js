@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import * as CSV from 'csv-string';
+import queryString from 'query-string';
 
 import Background from '../images/doctor-background.png'
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
@@ -40,6 +41,10 @@ const languageDict = {
 
 const DoctorFinder = () => {
 
+    let params = queryString.parse(window.location.search)
+
+    const [pageLanguage, setPageLanguage] = useState(params.language || "english")
+
     const [selectedSpecialty, setSelectedSpecialty] = useState('')
     const [specialtyArray, setSpecialtyArray] = useState([])
 
@@ -54,7 +59,6 @@ const DoctorFinder = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('')
     const [languageArray, setLanguageArray] = useState([])
 
-    const [pageLanguage, setPageLanguage] = useState("english")
 
     useEffect(() => {
         getCSV(SpecialtyCSV).then((result) => setSpecialtyArray(result))

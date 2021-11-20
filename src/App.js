@@ -14,6 +14,7 @@ import Contact from './pages/Contact'
 import Advocacy from './pages/Advocacy'
 
 function App() {
+
   return (
     <div>
       <Navbar />

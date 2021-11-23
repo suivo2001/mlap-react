@@ -1,0 +1,5 @@
+#grad {
+    background-image: linear-gradient(to left, #09c6f9,#045de9);
+    padding: 5rem 2.5rem;
+    align-content: center;
+  }

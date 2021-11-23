@@ -25,12 +25,11 @@ const Navbar = () => {
             </div>
             
             <div className="navbar-menu" id='nav-links'>
-                <div className='navbar-start'>
-                    <a className='navbar-item mx-5' href='/'><b>Medical Literacy Access Project</b></a>
-                    
-                </div>
 
                 <div className="navbar-end">
+                    <a className="navbar-item" href='/'>
+                        Home
+                    </a>
                     <a className="navbar-item" href='/patient-guide'>
                         Patient Guides
                     </a>

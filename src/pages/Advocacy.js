@@ -1,11 +1,9 @@
 import React from 'react'
 
-import Background from '../images/doctor-background.png'
-
 const Advocacy = () => {
     return (
         <div>
-            <div className='section is-medium' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
+            <div className='section'  id="grad">
                 <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Our policy & advocacy section is dedicated to covering issues and solutions in medical literacy and access. 
                 </h1>
             </div>

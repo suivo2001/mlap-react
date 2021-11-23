@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Background from '../images/doctor-background.png'
 import EnglishPdf from '../Patient-Guides/Patient-Guide-in-English.pdf'
 import FrenchPdf from '../Patient-Guides/Patient-Guide-in-French.pdf'
 import SpanishPdf from '../Patient-Guides/Patient-Guide-in-Spanish.pdf'
@@ -10,7 +9,7 @@ import ChineseSimpPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Simplifie
 const PatientGuide = () => {
     return (
         <div>
-            <div className='section is-medium' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
+            <div className='section' id="grad">
                 <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>We seek to promote equitable health services and research through patient education and advocacy.</h1>
             </div>
             <div className='section '>

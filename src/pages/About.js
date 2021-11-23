@@ -2,7 +2,6 @@ import React from 'react'
 
 import PeopleCard from '../components/PeopleCard'
 
-import Background from '../images/doctor-background.png'
 import JohnLinImage from '../images/John-Lin.jpeg'
 import JasonLinImage from '../images/Jason-Lin.jpeg'
 import MariaChiaramonteImage from '../images/Maria-Chiaramonte.jpg'
@@ -15,8 +14,8 @@ import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
 const About = () => {
     return (
         <div>
-            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
-                <h1 className='title is-flex is-justify-content-center has-text-white'>About Medical Literact Access Project</h1>
+            <div className='section' id="grad">
+                <h1 className='title has-text-centered has-text-white'>About Medical Literact Access Project</h1>
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>

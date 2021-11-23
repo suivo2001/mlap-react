@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import * as CSV from 'csv-string';
 import queryString from 'query-string';
 
-import Background from '../images/doctor-background.png'
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
 import CitiesCSV from '../spreadsheets/cities.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
@@ -82,7 +81,7 @@ const DoctorFinder = () => {
 
     return (
         <div>
-            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
+            <div className='section' id="grad">
                 <h1 className='title has-text-centered has-text-white mx-6'>We provide a doctor finder tool in collaboration with
                     <a href={USNEWS} target='_blank' rel="noreferrer"> U.S. News & World Report. </a>
                 </h1>
@@ -107,7 +106,7 @@ const DoctorFinder = () => {
             </div>
             <div className='section is-flex is-justify-content-center'>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} style={{overflowX: "scroll"}}>
                     <div className='container is-flex'>
 
                         <div className='container mx-4'>

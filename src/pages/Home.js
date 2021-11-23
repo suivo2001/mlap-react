@@ -1,17 +1,17 @@
 import React from 'react'
 
-import Background from '../images/doctor-background.png'
 import EnglishPdf from '../Patient-Guides/Patient-Guide-in-English.pdf'
 import FrenchPdf from '../Patient-Guides/Patient-Guide-in-French.pdf'
 import SpanishPdf from '../Patient-Guides/Patient-Guide-in-Spanish.pdf'
 import ChineseTradPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Traditional.pdf'
 import ChineseSimpPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Simplified.pdf'
 
-const Home = ({setPageLanguage}) => {
+const Home = () => {
     return (
         <div>
-            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
-                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Making health services equitable and accessible for all.</h1>
+            <div className='section' id="grad">
+                <h1 className='title has-text-centered has-text-white mx-6 mb-6 is-size-2'>Medical Literacy and Access Project</h1>
+                <h1 className='title has-text-centered has-text-white mx-6'>Making health services equitable and accessible for all.</h1>
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>

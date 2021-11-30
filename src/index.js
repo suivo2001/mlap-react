@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
 import 'bulma/css/bulma.min.css';
 import './App.css'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router basename={process.env.PUBLIC_URL}>
    <App />
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root')
 );
 

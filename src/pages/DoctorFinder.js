@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
+import Select from 'react-select'
 import * as CSV from 'csv-string';
 import queryString from 'query-string';
 
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
-import CitiesCSV from '../spreadsheets/cities.csv'
+import CitiesCSV from '../spreadsheets/location.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
-
 
 const lang = require('../languages/doctor-finder.json')
 
 const USNEWS = 'https://health.usnews.com/doctors'
+
+
 
 const getCSV = async (fileName) => {
     const response = await fetch(fileName);
@@ -38,6 +40,8 @@ const languageDict = {
     chinese_trad: 6
 }
 
+
+
 const DoctorFinder = () => {
 
     let params = queryString.parse(window.location.search)
@@ -48,7 +52,6 @@ const DoctorFinder = () => {
     const [specialtyArray, setSpecialtyArray] = useState([])
 
     const [locationType, setLocationType] = useState('state/city')
-    const [selectedState, setSelectedState] = useState('')
     const [selectedLocation, setSelectedLocation] = useState('')
 
     const [cityArray, setCityArray] = useState([])
@@ -58,17 +61,25 @@ const DoctorFinder = () => {
     const [selectedLanguage, setSelectedLanguage] = useState('')
     const [languageArray, setLanguageArray] = useState([])
 
+    
 
     useEffect(() => {
         getCSV(SpecialtyCSV).then((result) => setSpecialtyArray(result))
-        getCSV(CitiesCSV).then((result) => setCityArray(result))
+        getCSV(CitiesCSV).then((result) => {
+            const newArray = []
+            console.log(result)
+            for (var i = 0; i < result.length; i++) {
+                newArray.push({ value: result[i][1], label: result[i][0] })
+            }
+            console.log(newArray)
+            setCityArray(newArray)
+        })
         getCSV(LanguagesCSV).then((result) => setLanguageArray(result))
     }, [])
 
     const handleSubmit = (event) => {
         console.log(selectedSpecialty)
         console.log(locationType)
-        console.log(selectedState)
         console.log(selectedLocation)
         console.log(selectedGender)
         console.log(selectedLanguage)
@@ -94,7 +105,7 @@ const DoctorFinder = () => {
                         <a onClick={() => setPageLanguage("spanish")}> Español, </a>
                         <a onClick={() => setPageLanguage("french")}> Français, </a>
                         <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>
-                        and 
+                        and
                         <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體). </a>
                     </p>
                 </div>
@@ -106,7 +117,7 @@ const DoctorFinder = () => {
             </div>
             <div className='section is-flex is-justify-content-center'>
 
-                <form onSubmit={handleSubmit} style={{overflowX: "scroll"}}>
+                <form onSubmit={handleSubmit} style={{ overflowX: "scroll" }}>
                     <div className='container is-flex'>
 
                         <div className='container mx-4'>
@@ -162,7 +173,7 @@ const DoctorFinder = () => {
                                 <label className="label">{lang[pageLanguage].location_type}</label>
                                 <div className="control">
                                     <div className="select">
-                                        <select onChange={(e) => { setLocationType(e.target.value); setSelectedLocation(''); setSelectedState('') }}>
+                                        <select onChange={(e) => { setLocationType(e.target.value); setSelectedLocation('') }}>
                                             <option value='state/city'>{lang[pageLanguage].state_and_city}</option>
                                             <option value='zip'>{lang[pageLanguage].zip_code}</option>
                                         </select>
@@ -175,31 +186,17 @@ const DoctorFinder = () => {
                                 locationType === 'state/city' ?
 
                                     <div className="field">
-                                        {/*State Section*/}
-                                        <label className="label">{lang[pageLanguage].state}</label>
-                                        <div className="control">
-                                            <div className="select">
-                                                <select onChange={(e) => { setSelectedState(e.target.value); setSelectedLocation(e.target.value) }}>
-                                                    <option value=''>{lang[pageLanguage].select}</option>
-                                                    {states.map((state) => {
-                                                        return (<option key={state} value={state}>{state}</option>)
-                                                    })}
-                                                </select>
-                                            </div>
-                                        </div>
-                                        {/*City Section*/}
+                                    
+                                        {/*City or state Section*/}
+
                                         <div className="field mt-3">
-                                            <label className="label">{lang[pageLanguage].city}</label>
+                                            <label className="label">{lang[pageLanguage].state_and_city}</label>
                                             <div className="control">
-                                                <div className="select">
-                                                    <select disabled={selectedState === ''} onChange={(e) => setSelectedLocation(e.target.value)} style={{ width: '268px' }}>
-                                                        <option value=''>{lang[pageLanguage].select}</option>
-                                                        {cityArray.map((city) => {
-                                                            if (city[1].includes(`%20${selectedState}`))
-                                                                return (<option key={city[0]} value={city[1]}>{city[0]}</option>)
-                                                        })}
-                                                    </select>
-                                                </div>
+
+
+                                                <Select options={cityArray} onChange={(e) => {setSelectedLocation(e.value)}} maxMenuHeight={135} menuPlacement="bottom" />
+                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -208,13 +205,14 @@ const DoctorFinder = () => {
                                     <div className="field">
                                         <label className="label">{lang[pageLanguage].zip_code}</label>
                                         <div className="control">
-                                            <input className="input" type="text" placeholder="enter zip code" onChange={(e) => setSelectedLocation(e.target.value)} style={{ width: '268px' }} />
+                                            <input className="input" type="text" placeholder="enter zip code" onChange={(e) => setSelectedLocation(e.target.value)}/>
                                         </div>
                                     </div>
                             }
 
                         </div>
                     </div>
+
                     <div className="field is-flex is-justify-content-center mt-5">
                         <div className="control">
                             <input type="submit" value={lang[pageLanguage].search} className="button is-primary" />
@@ -241,60 +239,3 @@ const DoctorFinder = () => {
 }
 
 export default DoctorFinder
-
-
-const states = ["AK",
-    "AL",
-    "AR",
-    "AS",
-    "AZ",
-    "CA",
-    "CO",
-    "CT",
-    "DC",
-    "DE",
-    "FL",
-    "GA",
-    "GU",
-    "HI",
-    "IA",
-    "ID",
-    "IL",
-    "IN",
-    "KS",
-    "KY",
-    "LA",
-    "MA",
-    "MD",
-    "ME",
-    "MI",
-    "MN",
-    "MO",
-    "MS",
-    "MT",
-    "NC",
-    "ND",
-    "NE",
-    "NH",
-    "NJ",
-    "NM",
-    "NV",
-    "NY",
-    "OH",
-    "OK",
-    "OR",
-    "PA",
-    "PR",
-    "RI",
-    "SC",
-    "SD",
-    "TN",
-    "TX",
-    "UT",
-    "VA",
-    "VI",
-    "VT",
-    "WA",
-    "WI",
-    "WV",
-    "WY"]

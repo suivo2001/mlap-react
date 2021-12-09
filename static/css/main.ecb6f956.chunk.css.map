@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,MACI,wDAA2D,CAC3D,mBAAoB,CACpB,oBACF","file":"main.ecb6f956.chunk.css","sourcesContent":["#grad {\n    background-image: linear-gradient(to left, #09c6f9,#045de9);\n    padding: 5rem 2.5rem;\n    align-content: center;\n  }"]}

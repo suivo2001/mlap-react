@@ -4,7 +4,7 @@ import * as CSV from 'csv-string';
 import queryString from 'query-string';
 
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
-import CitiesCSV from '../spreadsheets/location.csv'
+import CitiesCSV from '../spreadsheets/cities.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
 
 const lang = require('../languages/doctor-finder.json')
@@ -69,7 +69,7 @@ const DoctorFinder = () => {
             const newArray = []
             console.log(result)
             for (var i = 0; i < result.length; i++) {
-                newArray.push({ value: result[i][1], label: result[i][0] })
+                newArray.push({ value: encodeURIComponent(result[i][0]), label: result[i][0] })
             }
             console.log(newArray)
             setCityArray(newArray)
@@ -193,8 +193,16 @@ const DoctorFinder = () => {
                                             <label className="label">{lang[pageLanguage].state_and_city}</label>
                                             <div className="control">
 
-
-                                                <Select options={cityArray} onChange={(e) => {setSelectedLocation(e.value)}} maxMenuHeight={135} menuPlacement="bottom" />
+                                                
+                                                
+                                                <Select 
+                                                filterOption={
+                                                    ({label}, query) => 
+                                                      query.length>0 && label.toLowerCase().includes(query.toLowerCase()) 
+                                                    } 
+                                                options={cityArray} onChange={(e) => {setSelectedLocation(e.value)}} maxMenuHeight={135} menuPlacement="bottom" />
+                                                
+                                                
                                                 
 
                                             </div>

@@ -3,7 +3,7 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react'
 import { getDistance } from 'geolib'
 import Geocode from "react-geocode";
 
-import ClinicsJSON from '../spreadsheets/clinics.json'
+import ClinicsJSON from '../spreadsheets/chc.json'
 import ZipDictionary from '../spreadsheets/zip.json'
 
 const mapKey = process.env.REACT_APP_MAP_API_KEY
@@ -11,10 +11,6 @@ const mapKey = process.env.REACT_APP_MAP_API_KEY
 Geocode.setApiKey(mapKey);
 Geocode.setLanguage("en");
 Geocode.setRegion("us");
-
-function timeout(delay) {
-    return new Promise(res => setTimeout(res, delay));
-}
 
 const style = {
 
@@ -72,20 +68,9 @@ const ClinicFinder = (props) => {
                 const compareZip = castZip(clinic[8])
 
                 if (ZipDictionary[compareZip] !== undefined && getDistance(ZipDictionary[currentZip], ZipDictionary[compareZip]) < searchWithin) {
-                    Geocode.fromAddress(clinic[1]).then(
-                        (response) => {
-                            const position = response.results[0].geometry.location;
-                            clinic.push(position)
-
-                        },
-                        (error) => {
-                            console.error(error);
-                        }
-                    );
                     newArr.push(clinic)
                 }
             })
-            await timeout(1000)
             setClinicsArray(newArr)
             if (newArr.length===0)
                 setShowWarning(true)
@@ -120,6 +105,7 @@ const ClinicFinder = (props) => {
                             <option value={9000}>5 miles</option>
                             <option value={15*1600}>15 miles</option>
                             <option value={25*1600}>25 miles</option>
+                            <option value={50*1600}>50 miles</option>
                         </select>
                     </div>
                     {/* eslint-disable-next-line */}
@@ -133,7 +119,7 @@ const ClinicFinder = (props) => {
                     lng: -88.081807
                 }}
                 center={
-                    clinicsArray.length === 0 ? undefined : clinicsArray[0][clinicsArray[0].length - 1]
+                clinicsArray.length === 0 ? undefined : {lat:clinicsArray[0][9],lng:clinicsArray[0][10]}
                 }>
                 {clinicsArray.map((clinic, index) => {
                     return (<Marker onClick={onMarkerClick}
@@ -143,7 +129,7 @@ const ClinicFinder = (props) => {
                         website={clinic[2]}
                         phone={clinic[3]}
                         email={clinic[4]}
-                        position={clinic[clinic.length - 1]} />)
+                        position={{lat:clinic[9],lng:clinic[10]}} />)
                 })}
 
                 <InfoWindow

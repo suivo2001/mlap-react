@@ -20,7 +20,6 @@ jobs:
         npm install
         npm run-script build
       env:
-        REACT_APP_GEOLOCATION_APIKey: ${{ secrets.REACT_APP_GEOLOCATION_APIKey }}
         REACT_APP_MAP_APIKey: ${{ secrets.REACT_APP_MAP_APIKey }}
 
     - name: Deploy

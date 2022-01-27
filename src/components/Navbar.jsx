@@ -16,7 +16,7 @@ const Navbar = () => {
                     <b>MLAP</b>
                 </a>
                 <GoogleTranslate />
-                
+                {/* eslint-disable-next-line */}
                 <a role="button" className="navbar-burger is-light" id='burger' aria-label="menu" aria-expanded="false" onClick={setActive}>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>

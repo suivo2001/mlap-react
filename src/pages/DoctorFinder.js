@@ -89,12 +89,18 @@ const DoctorFinder = () => {
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
                     <p className='content has-text-centered mx-6 my-3'>We have translated this tool into these languagues:
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("portuguese")}> Português, </a>
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("spanish")}> Español, </a>
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("french")}> Français, </a>
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>
                         and
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體). </a>
                     </p>
                 </div>

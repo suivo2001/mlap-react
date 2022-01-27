@@ -6,7 +6,9 @@ import Geocode from "react-geocode";
 import ClinicsJSON from '../spreadsheets/clinics.json'
 import ZipDictionary from '../spreadsheets/zip.json'
 
-Geocode.setApiKey("AIzaSyCEWnuXt0DfIu5yR0AvJAyUz3kFOUyuGi4");
+const mapKey = process.env.REACT_APP_MAP_APIKey
+
+Geocode.setApiKey(mapKey);
 Geocode.setLanguage("en");
 Geocode.setRegion("us");
 
@@ -97,10 +99,10 @@ const ClinicFinder = (props) => {
                 <div className='control'>
                     <label className="label">Zip Code</label>
                     <input className="input" type="text" placeholder="ZIP Code" onChange={(e) => setCurrentZip(e.target.value)} />
-
+                    {/* eslint-disable-next-line */}
                     <a className="button is-primary mt-3" onClick={handleSubmit}>Search</a>
                 </div>
-
+            
             </div>
             <Map google={window.google} style={style} zoom={clinicsArray.length > 0 ? 11 : 4} onClick={onMapClicked}
                 initialCenter={{
@@ -140,7 +142,7 @@ const ClinicFinder = (props) => {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyDwY4iEyaGrQi2aHbEqmLoEX6NLsxVFSxc")
+    apiKey: (mapKey)
 })(ClinicFinder)
 
 

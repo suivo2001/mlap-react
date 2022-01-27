@@ -21,6 +21,9 @@ jobs:
         npm run-script build
       env:
         REACT_APP_MAP_APIKey: ${{ secrets.REACT_APP_MAP_APIKey }}
+    
+    - name: Copy index as 404
+      run: cp build/index.html build/404.html
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3

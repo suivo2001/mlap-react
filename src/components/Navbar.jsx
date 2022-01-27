@@ -36,6 +36,9 @@ const Navbar = () => {
                     <a className="navbar-item" href='/doctor-finder'>
                         Doctor Finder
                     </a>
+                    <a className="navbar-item" href='/clinic-finder'>
+                        Clinic Finder
+                    </a>
                     <a className="navbar-item" href='/advocacy'>
                         Advocacy
                     </a>

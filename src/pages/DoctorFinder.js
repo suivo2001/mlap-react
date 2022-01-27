@@ -4,8 +4,8 @@ import * as CSV from 'csv-string';
 import queryString from 'query-string';
 
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
-import CitiesCSV from '../spreadsheets/cities.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
+import CityJSON from '../spreadsheets/cities.json'
 
 const lang = require('../languages/doctor-finder.json')
 
@@ -65,24 +65,13 @@ const DoctorFinder = () => {
 
     useEffect(() => {
         getCSV(SpecialtyCSV).then((result) => setSpecialtyArray(result))
-        getCSV(CitiesCSV).then((result) => {
-            const newArray = []
-            console.log(result)
-            for (var i = 0; i < result.length; i++) {
-                newArray.push({ value: encodeURIComponent(result[i][0]), label: result[i][0] })
-            }
-            console.log(newArray)
-            setCityArray(newArray)
-        })
+        
+        setCityArray(CityJSON)
         getCSV(LanguagesCSV).then((result) => setLanguageArray(result))
+        
     }, [])
 
     const handleSubmit = (event) => {
-        console.log(selectedSpecialty)
-        console.log(locationType)
-        console.log(selectedLocation)
-        console.log(selectedGender)
-        console.log(selectedLanguage)
         window.open(
             `${USNEWS}/search?distance=20&sort=distance${selectedSpecialty ? `&specialty=${selectedSpecialty}` : ''}${selectedLocation ? `&location=${selectedLocation}` : ''}${selectedGender ? `&gender=${selectedGender}` : ''}${selectedLanguage ? `&language=${selectedLanguage}` : ''}`,
             '_blank' // <- This is what makes it open in a new window.
@@ -247,3 +236,25 @@ const DoctorFinder = () => {
 }
 
 export default DoctorFinder
+
+/*
+getCSV(CitiesCSV).then((result) => {
+            const newArray = []
+            console.log(result)
+            for (var i = 0; i < result.length; i++) {
+                newArray.push({ value: encodeURIComponent(result[i][0]), label: result[i][0] })
+            }
+            console.log(newArray)
+            
+        })
+
+getCSV(ZipCSV).then((result) => {
+            const newObj = {}
+            console.log(result)
+            for (var i = 0; i < result.length; i++) {
+                newObj[result[i][0]]={lat:parseFloat(result[i][1]), lng: parseFloat(result[i][2])}
+            }
+            console.log(newObj)
+            
+        })
+*/

@@ -20,7 +20,7 @@ jobs:
         npm install
         npm run-script build
       env:
-        REACT_APP_MAP_APIKey: ${{ secrets.REACT_APP_MAP_APIKey }}
+        REACT_APP_MAP_API_KEY: ${{ secrets.REACT_APP_MAP_API_KEY }}
     
     - name: Copy index as 404
       run: cp build/index.html build/404.html

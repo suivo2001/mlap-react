@@ -6,7 +6,7 @@ import Geocode from "react-geocode";
 import ClinicsJSON from '../spreadsheets/clinics.json'
 import ZipDictionary from '../spreadsheets/zip.json'
 
-const mapKey = process.env.REACT_APP_MAP_APIKey
+const mapKey = process.env.REACT_APP_MAP_API_KEY
 
 Geocode.setApiKey(mapKey);
 Geocode.setLanguage("en");

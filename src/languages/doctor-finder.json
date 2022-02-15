@@ -112,5 +112,42 @@
         "translator": "翻译: John Lin (布朗大学), Yi-Tang Lee, BS (貝勒醫學院)",
         "reviewers": "審稿人（中文）: Dr. Chi-Ying (Roy) Lin, MD, MPH (貝勒醫學院 神經醫學科 阿滋海默/失智症及帕金森/動作障礙中心)",
         "disclaimer": "免責聲明：本醫學指南及其使用為非營利商業用途。"
-    }
+    },
+    "persian": {
+        "doctor_finder": "دکتر یاب",
+        "select": "انتخاب کنید",
+        "specialty": "تخصص",
+        "language": "زبان",
+        "gender": "جنسیت پزشک",
+        "no_preference": "تفاوتی ندارد",
+        "male": "مذکر (پزشک آقا)",
+        "female": "مؤنث (پزشک خانم)",
+        "location_type": "مکان",
+        "state_and_city": "شهر،, ایالت،",
+        "zip_code": "یا کد پستی",
+        "state": "ایالت،",
+        "city": "شهر،",
+        "search": "جستجو کردن",
+        "translator": "ترجمه کردن: Sina Noshad, MD, PhD (Brown University)",
+        "reviewers": "بازبین: Sina Noshad, MD, PhD (Brown University)",
+        "disclaimer": "سلب مسئولیت: پروژه سواد پزشکی و دسترسی هیچ گونه منافع مالی یا سایر منافعی برای افشا ندارد"
+    },
+    "vietnamese": {
+        "doctor_finder": "Tìm kiếm bác sĩ",
+        "select": "Lựa Chọn",
+        "specialty": "Chuyên ngành",
+        "language": "Ngôn ngữ",
+        "gender": "Giới tính bác sĩ",
+        "no_preference": "Bất kỳ",
+        "male": "Nam giới",
+        "female": "Nữ giới",
+        "location_type": "Vị trí",
+        "state_and_city": "Thành phố, Tiểu bang",
+        "zip_code": "Hoặc mã Zip",
+        "state": "Tiểu bang",
+        "city": "Thành phố",
+        "search": "Tìm kiếm",
+        "translator": "Phiên dịch: Coby Nguyen (Đại học California, Berkeley)",
+        "reviewers": "Người đánh giá: Lance Truong, DO (Đại học Brown)",
+        "disclaimer": "Tuyên bố từ chối trách nhiệm: Dự án Tiếp cận và Đọc hiểu Y học không có quyền lợi tài chính hoặc lợi ích khác để tiết lộ. "}
 }

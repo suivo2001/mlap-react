@@ -37,7 +37,9 @@ const languageDict = {
     spanish: 3,
     french: 4,
     chinese_simp: 5,
-    chinese_trad: 6
+    chinese_trad: 6,
+    persian: 7,
+    vietnamese: 8
 }
 
 
@@ -101,7 +103,11 @@ const DoctorFinder = () => {
                         <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>
                         and
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體). </a>
+                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體) </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("persian")}> فارسی, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>
                     </p>
                 </div>
             </div>

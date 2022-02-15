@@ -44,6 +44,18 @@ const Home = () => {
                         <td><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></td>
                         <td><a href='/doctor-finder/search?language=french'>Français | French</a></td>
                     </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href='/doctor-finder/search?language=portuguese'>Português | Portuguese</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href='/doctor-finder/search?language=persian'>فارسی | Persian</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href='/doctor-finder/search?language=vietnamese'>Tiếng Việt | Vietnamese</a></td>
+                    </tr>
                 </table>
             </div>
         </div>

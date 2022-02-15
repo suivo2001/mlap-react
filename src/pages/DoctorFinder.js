@@ -100,12 +100,12 @@ const DoctorFinder = () => {
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("french")}> Français, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>
+                        <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>                  
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體), </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("persian")}> فارسی, </a>  
                         and
-                        {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體) </a>
-                        {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("persian")}> فارسی, </a>
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>
                     </p>

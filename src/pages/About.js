@@ -32,20 +32,20 @@ const About = () => {
                         <div className='columns'>
                             <div className='column'>
                                 <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage} />
-                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage} />
-                                <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
+                                <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
+                                <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
 
                             <div className='column'>
-                                <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
-                                <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
+                                <PeopleCard name='Manusree Bhatter' location="UT Dallas" content="Director for Telugu Services" image={ManusreeBhatterImage} />
+                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
                                 
                             </div>
                             <div className='column'>
                                 <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
-                                <PeopleCard name='Manusree Bhatter' location="UT Dallas" content="Director for Telugu Services" image={ManusreeBhatterImage} />
-                                <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
+                                <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
+                                <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
                             </div>
                         </div>
 

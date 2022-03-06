@@ -7,10 +7,10 @@ import JasonLinImage from '../images/Jason-Lin.jpeg'
 import MariaChiaramonteImage from '../images/Maria-Chiaramonte.jpg'
 import DanielWangImage from '../images/Daniel-Wang.jpeg'
 import CobyNguyenImage from '../images/Coby-Nguyen.jpeg'
-import AudreyNguyenImage from '../images/Audrey-Nguyen.jpg'
 import MiaWilliamsImage from '../images/Mia-Williams.JPG'
 import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
 import IvoSuImage from '../images/Ivo-Su.png'
+import ManusreeBhatterImage from '../images/Manusree-Bhatter.jpeg'
 
 const About = () => {
     return (
@@ -37,14 +37,14 @@ const About = () => {
                             </div>
 
                             <div className='column'>
-                                <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Policy Director" image={CobyNguyenImage} />
+                                <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
                                 <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
                                 <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
                                 
                             </div>
                             <div className='column'>
                                 <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
-                                <PeopleCard name='Audrey Nguyen' location="University of Houston" content="Director for Vietnamese Services" image={AudreyNguyenImage} />
+                                <PeopleCard name='Manusree Bhatter' location="UT Dallas" content="Director for Telugu Services" image={ManusreeBhatterImage} />
                                 <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
                         </div>

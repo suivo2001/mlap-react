@@ -29,7 +29,7 @@ const castZip = (zipCode) => {
         return zipCode.substring(0, 5)
 }
 
-const ClinicFinder = (props) => {
+const CareFinder = (props) => {
 
     const [showingInfoWindow, setShowInfoWindow] = useState(false)
     const [activeMarker, setActiveMarker] = useState({})
@@ -86,6 +86,14 @@ const ClinicFinder = (props) => {
         <div>
             <div className='section' id="grad">
                 <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Find a nearby clinic with your Zip Code!</h1>
+            </div>
+
+            <div className='section '>
+                <div className='container is-flex is-justify-content-center'>
+                    <div>
+                        <p className='content has-text-centered mx-6'>We are currently developing this tool to find federally-qualified community health centers and federally-recognized free clinics using federal HRSA records.</p>
+                    </div>
+                </div>
             </div>
             {showWarning?
                 <div className='section is-flex is-justify-content-center has-background-warning'>

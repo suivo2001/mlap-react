@@ -15,7 +15,7 @@ const Home = () => {
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
-                    <p className='content has-text-centered mx-6 my-3'>We have developed a patient guide for medical access and a doctor finder tool that have been reviewed and validated by academic physicians and health researchers.</p>
+                    <p className='content has-text-centered mx-6 my-3'>We have developed a patient guide for medical access and a doctor finder tool that have been reviewed and validated by academic physicians and health researchers. We are currently using United States Health Resources and Services Administration data to develop the first-ever tool to find federally-qualified community health centers and federally-recognized free clinics.</p>
                 </div>
             </div>
             <div className='section is-flex is-justify-content-center has-text-centered mx-6'>

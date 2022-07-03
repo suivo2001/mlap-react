@@ -10,9 +10,9 @@ import Home from './pages/Home'
 import PatientGuide from './pages/PatientGuide'
 import About from './pages/About'
 import DoctorFinder from './pages/DoctorFinder'
-import ClinicFinder from './pages/ClinicFinder'
+import CareFinder from './pages/CareFinder'
 import Contact from './pages/Contact'
-import Advocacy from './pages/Advocacy'
+import Partners from './pages/Partners'
 
 function App() {
 
@@ -28,8 +28,8 @@ function App() {
           <About />
           <Footer />
         </Route>
-        <Route path='/advocacy'>
-          <Advocacy />
+        <Route path='/partners'>
+          <Partners />
           <Footer />
         </Route>
         <Route path='/contact'>
@@ -40,8 +40,8 @@ function App() {
           <DoctorFinder />
           <Footer />
         </Route>
-        <Route path='/clinic-finder'>
-          <ClinicFinder />
+        <Route path='/care-finder'>
+          <CareFinder />
         </Route>
         <Route path='/'>
           <Home />

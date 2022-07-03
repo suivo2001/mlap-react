@@ -36,11 +36,11 @@ const Navbar = () => {
                     <a className="navbar-item" href='/doctor-finder'>
                         Doctor Finder
                     </a>
-                    <a className="navbar-item" href='/clinic-finder'>
-                        Clinic Finder
+                    <a className="navbar-item" href='/care-finder'>
+                        Care Finder
                     </a>
-                    <a className="navbar-item" href='/advocacy'>
-                        Advocacy
+                    <a className="navbar-item" href='/partners'>
+                        Partners
                     </a>
                     <a className="navbar-item" href='/about'>
                         About

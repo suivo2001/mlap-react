@@ -160,6 +160,6 @@ const CareFinder = (props) => {
 
 export default GoogleApiWrapper({
     apiKey: (mapKey)
-})(ClinicFinder)
+})(CareFinder)
 
 

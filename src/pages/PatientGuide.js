@@ -21,7 +21,7 @@ const PatientGuide = () => {
                         <a className='content is-flex is-justify-content-center' href={ChineseSimpPdf} target='_blank' rel='noopener noreferrer'>- 中文 (简体) | Chinese (Simplified)</a>
                         <a className='content is-flex is-justify-content-center' href={ChineseTradPdf} target='_blank' rel='noopener noreferrer'>- 中文 (繁體) | Chinese (Traditional)</a>
                         <a className='content is-flex is-justify-content-center' href={FrenchPdf} target='_blank' rel='noopener noreferrer'>- Français | French</a>
-                        <p className='content is-flex is-justify-content-center'>We are currently translating this guide into Hindi, Urdu, French, Vietnamese, and Farsi.</p>
+                        <p className='content is-flex is-justify-content-center'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,6 @@ const Home = () => {
         <div>
             <div className='section' id="grad">
                 <h1 className='title has-text-centered has-text-white mx-6 mb-6 is-size-2'>Medical Literacy and Access Project</h1>
-                <h1 className='title has-text-centered has-text-white mx-6'>Making health services equitable and accessible for all.</h1>
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>

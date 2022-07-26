@@ -18,4 +18,4 @@ const Partners = () => {
     )
 }
 
-export default Advocacy
+export default Partners

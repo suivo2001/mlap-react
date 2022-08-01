@@ -45,9 +45,11 @@ const Navbar = () => {
                     <a className="navbar-item" href='/about'>
                         About
                     </a>
-                    <a className='navbar-item' href='/contact'>
+                    <div className='navbar-item'>
+                        <a className='button is-primary' href='/contact'>
                             Contact Us
-                    </a>
+                        </a>
+                    </div>
                 </div>
 
             </div>

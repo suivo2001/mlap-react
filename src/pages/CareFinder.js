@@ -3,7 +3,10 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react'
 import { getDistance } from 'geolib'
 import Geocode from "react-geocode";
 
-import ClinicsJSON from '../spreadsheets/chc.json'
+// Use this website to convert chc CSV to JSON using the CSV to JSON array option
+//https://www.convertcsv.com/csv-to-json.htm
+
+import ClinicsJSON from '../spreadsheets/all_clinics.json'
 import ZipDictionary from '../spreadsheets/zip.json'
 
 const mapKey = process.env.REACT_APP_MAP_API_KEY

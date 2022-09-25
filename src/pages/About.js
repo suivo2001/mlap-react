@@ -32,14 +32,14 @@ const About = () => {
                         <div className='columns'>
                             <div className='column'>
                                 <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage} />
-                                <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
+                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Chair, Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
 
                             <div className='column'>
                                 <PeopleCard name='Manusree Bhatter' location="UT Dallas" content="Director for Telugu Services" image={ManusreeBhatterImage} />
-                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
+                                <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
                                 
                             </div>
                             <div className='column'>

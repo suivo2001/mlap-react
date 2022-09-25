@@ -32,7 +32,7 @@ const About = () => {
                         <div className='columns'>
                             <div className='column'>
                                 <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage} />
-                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Chair, Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
                                 <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
 
@@ -43,7 +43,7 @@ const About = () => {
                                 
                             </div>
                             <div className='column'>
-                                <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
+                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Chair, Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
                                 <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
                             </div>

@@ -40,7 +40,11 @@ const languageDict = {
     chinese_trad: 6,
     persian: 7,
     vietnamese: 8,
-    telugu: 9
+    telugu: 9,
+    italian: 10,
+    russian: 11,
+    arabic: 12,
+    romanian: 13
 }
 
 
@@ -91,26 +95,34 @@ const DoctorFinder = () => {
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
-                    <p className='content has-text-centered mx-6 my-3'>We have translated this tool into eight languagues:
+                    <p className='content has-text-centered mx-6 my-3'>We provide this tool in 13 languagues:
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("portuguese")}> Português, </a>
-                        {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("spanish")}> Español, </a>
-                        {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("french")}> Français, </a>
+                        <a onClick={() => setPageLanguage("arabic")}> عربى, </a>
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>                  
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體), </a>
                         {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("french")}> Français, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("italian")}> Italiano, </a>
+                        {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("persian")}> فارسی, </a>  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>
+                        <a onClick={() => setPageLanguage("portuguese")}> Português, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("romanian")}> Română, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("russian")}> русский, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("spanish")}> Español, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("telugu")}> తెలుగు. </a>
                         and
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("telugu")}> Telugu. </a>
+                        <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>
                     </p>
                 </div>
             </div>

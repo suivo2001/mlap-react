@@ -16,7 +16,7 @@
         "search": "Search",
         "translator": "",
         "reviewers": "",
-        "disclaimer": ""
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."
     },
     "portuguese": {
         "doctor_finder": "Localizador de Doutor/a",
@@ -168,5 +168,82 @@
         "translator": "అనువాదం: Manusree Bhatter (Texas A&M College of Medicine)",
         "reviewers": "వీరిచే సమీక్షించబడింది: Dr. Aravind Kokkirala (Cardiology, Brown University)",
         "disclaimer": "నిరాకరణ: మెడికల్ లిటరసీ మరియు యాక్సెస్ ప్రాజెక్ట్‌కు వెల్లడించడానికి ఆర్థిక లేదా ఇతర ఆసక్తులు లేవు."
-        }
+        },   
+    "italian": {
+        "doctor_finder": "Cercatore Medico",
+        "select": "Selezionare",
+        "specialty": "Specializzazioni",
+        "language": "Lingua",
+        "gender": "Genere del medico",
+        "no_preference": "Senza preferenza",
+        "male": "Maschio",
+        "female": "Femmina",
+        "location_type": "Luogo",
+        "state_and_city": "Città, Stato",
+        "zip_code": "Codice postale",
+        "state": "Stato",
+        "city": "Città",
+        "search": "Ricerca",
+        "translator": "Traduttore: David Jacob Sigal, Lucus Francis La Greca-Liparota (Student Volunteer Interpreters)",
+        "reviewers": "Revisore: Luca Bartolini (Pediatrics and Neurology, Brown University)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."
+    },
+    
+    "russian": {
+        "doctor_finder": "Поиск доктора",
+        "select": "Выбирать",
+        "specialty": "Специальность",
+        "language": "Язык",
+        "gender": "Пол врача",
+        "no_preference": "Без предпочтения",
+        "male": "Mужчина",
+        "female": "Женщина",
+        "location_type": "Местонахождение",
+        "state_and_city": "Город, Штат",
+        "zip_code": "Почтовый код",
+        "state": "Штат",
+        "city": "Город",
+        "search": "Поиск",
+        "translator": "Переводчик: Mariia Glasman, David Jacob Sigal (Student Volunteer Interpreters)",
+        "reviewers": "рецензент: Tatiana Bakaeva (Ophthalmology, Brown University)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    },
+    "arabic": {
+        "doctor_finder": "مكتشف الطبيب",
+        "select": "يختار",
+        "specialty": "تخصص",
+        "language": "لغة",
+        "gender": "جنس الطبيب",
+        "no_preference": "لا تفضيل",
+        "male": "ذكر",
+        "female": "انثى",
+        "location_type": "موقع",
+        "state_and_city": "مدينة ,ولاية",
+        "zip_code": "الرمز البريدي",
+        "state": "ولاية",
+        "city": "مدينة",
+        "search": "يبحث",
+        "translator": "مترجم: Sana Mhish, George Obri (Student Volunteer Interpreters)",
+        "reviewers": "مراجع: Hanan Khalil (Diagnostic Imaging, Brown University)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    },
+
+    
+    "romanian": {
+        "doctor_finder": "Găsește doctor",
+        "select": "Selecta",
+        "specialty": "Specialitatea",
+        "language": "Limba",
+        "gender": "Genul medicului",
+        "no_preference": "Nici o preferință",
+        "male": "Bărbat",
+        "female": "Femeie",
+        "location_type": "Locație",
+        "state_and_city": "Oraș, Stat",
+        "zip_code": "Cod Poștal",
+        "state": "Stat",
+        "city": "Oraș",
+        "search": "Căutare",
+        "translator": "Traducător: Leo Vanciu (Student Volunteer Interpreters)",
+        "reviewers": "Revizor: Emil Stefan Vutescu (Orthopedic Surgery, Brown University)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    
+    }
 }

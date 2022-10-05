@@ -11,18 +11,23 @@ import MiaWilliamsImage from '../images/Mia-Williams.JPG'
 import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
 import IvoSuImage from '../images/Ivo-Su.png'
 import ManusreeBhatterImage from '../images/Manusree-Bhatter.jpeg'
+import Background from '../images/doctor-background.png'
 
 const About = () => {
     return (
         <div>
-            <div className='section' id="grad">
-                <h1 className='title has-text-centered has-text-white'>About Medical Literact Access Project</h1>
+            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
+                <h1 className='title has-text-centered has-text-white'>About the Medical Literacy and Access Project</h1>
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
+                    
+                    <div>
                     <p className='content has-text-centered mx-6 my-3'>We are a nonprofit organization founded in May 2021 to promote health and welfare among medically underserved patients through patient guides, advocacy, and research. We are overseen by an inclusive board of directors including health providers, patients, advocates, and students. If you have any suggestions or thoughts on improving our resources and programs, please
                         <a href='/contact'> let us know!</a>
                     </p>
+                        <p className='content has-text-centered mx-6'>We are grateful for the help of the <a href="https://www.npaf.org/" target='_blank' rel="noreferrer">National Patient Advocate Foundation</a>, <a href="https://www.facebook.com/studentvolunteerinterpreters/" target='_blank' rel="noreferrer">Student Volunteer Interpreters</a>, and <a href="https://www.usnews.com/" target='_blank' rel="noreferrer">U.S. News & World Report</a> in developing our primary tools, as well as our community partners throughout the United States.</p>
+                    </div>
                 </div>
             </div>
             <div className='section'>

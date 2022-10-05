@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.81588759.chunk.css",
-    "main.js": "/static/js/main.e6513228.chunk.js",
-    "main.js.map": "/static/js/main.e6513228.chunk.js.map",
+    "main.js": "/static/js/main.673ef513.chunk.js",
+    "main.js.map": "/static/js/main.673ef513.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a210a60f.js",
     "runtime-main.js.map": "/static/js/runtime-main.a210a60f.js.map",
     "static/css/2.09ef058d.chunk.css": "/static/css/2.09ef058d.chunk.css",
@@ -26,6 +26,10 @@
     "static/media/Patient-Guide-in-French.573056fd.pdf": "/static/media/Patient-Guide-in-French.573056fd.pdf",
     "static/media/Patient-Guide-in-Spanish.14dc0dd9.pdf": "/static/media/Patient-Guide-in-Spanish.14dc0dd9.pdf",
     "static/media/Sina-Noshadjamal.0eecb751.png": "/static/media/Sina-Noshadjamal.0eecb751.png",
+    "static/media/doctor-background.90846c05.png": "/static/media/doctor-background.90846c05.png",
+    "static/media/home-bottom.4d239c48.png": "/static/media/home-bottom.4d239c48.png",
+    "static/media/home-left.7aa60b37.jpg": "/static/media/home-left.7aa60b37.jpg",
+    "static/media/home-right.91ed4a68.jpg": "/static/media/home-right.91ed4a68.jpg",
     "static/media/languages.c69c5485.csv": "/static/media/languages.c69c5485.csv",
     "static/media/specialties.f4881bcb.csv": "/static/media/specialties.f4881bcb.csv"
   },
@@ -34,6 +38,6 @@
     "static/css/2.09ef058d.chunk.css",
     "static/js/2.c180e813.chunk.js",
     "static/css/main.81588759.chunk.css",
-    "static/js/main.e6513228.chunk.js"
+    "static/js/main.673ef513.chunk.js"
   ]
 }

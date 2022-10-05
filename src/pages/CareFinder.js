@@ -8,6 +8,7 @@ import Geocode from "react-geocode";
 
 import ClinicsJSON from '../spreadsheets/all_clinics.json'
 import ZipDictionary from '../spreadsheets/zip.json'
+import Background from '../images/doctor-background.png'
 
 const mapKey = process.env.REACT_APP_MAP_API_KEY
 
@@ -87,11 +88,11 @@ const CareFinder = (props) => {
 
     return (
         <div>
-            <div className='section' id="grad">
-                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Find a nearby clinic with your Zip Code!</h1>
+            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
+                <h1 className='title is-flex is-justify-content-center has-text-centered has-text-white mx-6'>Find a nearby affordable clinic!</h1>
             </div>
 
-            <div className='section '>
+            <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center'>
                     <div>
                         <p className='content has-text-centered mx-6'>We are currently developing this tool to find federally-qualified community health centers and federally-recognized free clinics using federal HRSA records.</p>

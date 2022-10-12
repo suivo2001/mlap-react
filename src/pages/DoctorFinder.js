@@ -44,7 +44,8 @@ const languageDict = {
     italian: 10,
     russian: 11,
     arabic: 12,
-    romanian: 13
+    romanian: 13,
+    greek: 14
 }
 
 
@@ -106,6 +107,8 @@ const DoctorFinder = () => {
                         <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體), </a>
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("french")}> Français, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("greek")}> Ελληνικά, </a>
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("italian")}> Italiano, </a>
                         {/* eslint-disable-next-line */}

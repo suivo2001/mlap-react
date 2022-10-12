@@ -245,5 +245,25 @@
         "translator": "Traducător: Leo Vanciu (Student Volunteer Interpreters)",
         "reviewers": "Revizor: Emil Stefan Vutescu (Orthopedic Surgery, Brown University)",
         "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    
+    },
+    
+    "greek": {
+        "doctor_finder": "Ανιχνευτής γιατρού",
+        "select": "επιλέγω",
+        "specialty": "ειδικότητα",
+        "language": "Γλώσσα",
+        "gender": "το φύλο του ιατρού",
+        "no_preference": "καμία προτίμηση",
+        "male": "άνδρας",
+        "female": "γυναίκα",
+        "location_type": "τοποθεσία",
+        "state_and_city": "πόλη, πολιτεία",
+        "zip_code": "ταχυδρομικός κώδικας",
+        "state": "πολιτεία",
+        "city": "πόλη",
+        "search": "Αναζήτηση",
+        "translator": "μεταφραστής: Stevia Andreou (Student Volunteer Interpreters), Ioanna Tountas (Student Volunteer Interpreters)",
+        "reviewers": "κριτικός: Michael Vezeridis (Surgery, Brown University)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    
     }
 }

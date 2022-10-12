@@ -23,7 +23,7 @@ const Navbar = () => {
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            
+
             <div className="navbar-menu" id='nav-links'>
 
                 <div className="navbar-end">
@@ -38,9 +38,6 @@ const Navbar = () => {
                     </a>
                     <a className="navbar-item" href='/care-finder'>
                         Care Finder
-                    </a>
-                    <a className="navbar-item" href='/partners'>
-                        Partners
                     </a>
                     <a className="navbar-item" href='/about'>
                         About

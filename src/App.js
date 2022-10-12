@@ -12,7 +12,6 @@ import About from './pages/About'
 import DoctorFinder from './pages/DoctorFinder'
 import CareFinder from './pages/CareFinder'
 import Contact from './pages/Contact'
-import Partners from './pages/Partners'
 
 function App() {
 
@@ -26,10 +25,6 @@ function App() {
         </Route>
         <Route path='/about'>
           <About />
-          <Footer />
-        </Route>
-        <Route path='/partners'>
-          <Partners />
           <Footer />
         </Route>
         <Route path='/contact'>

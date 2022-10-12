@@ -6,6 +6,7 @@ import queryString from 'query-string';
 import SpecialtyCSV from '../spreadsheets/specialties.csv'
 import LanguagesCSV from '../spreadsheets/languages.csv'
 import CityJSON from '../spreadsheets/cities.json'
+import Background from '../images/doctor-background.png'
 
 const lang = require('../languages/doctor-finder.json')
 
@@ -89,9 +90,8 @@ const DoctorFinder = () => {
 
     return (
         <div>
-            <div className='section' id="grad">
-                <h1 className='title has-text-centered has-text-white mx-6'>We provide a doctor finder tool in collaboration with
-                    <a href={USNEWS} target='_blank' rel="noreferrer"> U.S. News & World Report. </a>
+            <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>
+                <h1 className='title has-text-centered has-text-white mx-6'>Find a doctor in your area!
                 </h1>
             </div>
             <div className='section has-background-light'>

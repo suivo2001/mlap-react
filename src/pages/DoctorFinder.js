@@ -96,7 +96,7 @@ const DoctorFinder = () => {
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
-                    <p className='content has-text-centered mx-6 my-3'>We provide this tool in 13 languagues:
+                    <p className='content has-text-centered mx-6 my-3'>We provide this tool in 14 languagues:
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
                         {/* eslint-disable-next-line */}

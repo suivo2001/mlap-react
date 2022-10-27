@@ -97,7 +97,7 @@ const CareFinder = (props) => {
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center'>
                     <div>
-                        <p className='content has-text-centered mx-6'>We are currently developing this tool to find federally-qualified community health centers and federally-recognized free clinics using federal HRSA records.</p>
+                        <p className='content has-text-centered mx-6'>With this tool, you can find 16,357 federally-qualified health centers and 235 federally-registered free clinics.</p>
                     </div>
                 </div>
             </div>
@@ -162,6 +162,7 @@ const CareFinder = (props) => {
                     </div>
                 </InfoWindow>
             </Map>
+
         </div>
         <div className='section has-background-light' style={{marginTop:'60%'}}>
         <p className='content has-text-centered mx-6'>We are the first and only search tool for federally-qualified health centers and federally-registered free clinics in the United States. 
@@ -169,6 +170,8 @@ const CareFinder = (props) => {
         Free clinics provide free and/or discounted care on a voluntary basis to low-income and/or uninsured patients and are supported primarily by non-governmental charitable donations. They are required to register with HRSA to obtain medical malpractice approval under the <a href="https://bphc.hrsa.gov/sites/default/files/bphc/technical-assistance/ftca-free-clinic-application-category.pdf">Federal Tort Claims Act</a>, although HRSA does not publish this information online. With grant support from Brown University, we obtained records for federally-registered free clinics from HRSA through a Freedom of Information Act request.</p>
         </div>
         </div>
+        </div>   
+
     )
 }
 

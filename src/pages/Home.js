@@ -19,7 +19,7 @@ const Home = () => {
                             Doctor Finder
                         </div>
                         <div className="content is-flex is-justify-content-center">
-                        We provide a search tool to find doctors who speak 57 languages in partnership with U.S. News & World Report. Available in 133+ languages thanks to Google Translate, with 13 physician-approved translations.
+                        We provide a search tool to find doctors who speak 57 languages in partnership with U.S. News & World Report. Available in 133+ languages thanks to Google Translate, with 14 physician-approved translations.
                         </div>
                         <div className="content is-flex is-justify-content-center">
                             <a href='./doctor-finder'>Learn more</a>

@@ -141,6 +141,7 @@ const CareFinder = (props) => {
                         website={clinic[2]}
                         phone={clinic[3]}
                         email={clinic[4]}
+                        type={clinic[5]}
                         position={{lat:clinic[9],lng:clinic[10]}} />)
                 })}
 
@@ -149,6 +150,7 @@ const CareFinder = (props) => {
                     visible={showingInfoWindow}>
                     <div>
                         <h1><b>{selectedPlace.name}</b></h1>
+                        <h2>{selectedPlace.type}</h2>
                         <br></br>
                         <h2>{selectedPlace.address}</h2>
                         <h2>{selectedPlace.website}</h2>

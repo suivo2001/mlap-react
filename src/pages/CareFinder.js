@@ -95,7 +95,7 @@ const CareFinder = (props) => {
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center'>
                     <div>
-                        <p className='content has-text-centered mx-6'>With this tool, you can find 16,357 federally-qualified community health centers and 235 federally-recognized free clinics.*</p>
+                        <p className='content has-text-centered mx-6'>With this tool, you can find 16,357 federally-qualified health centers and 235 federally-registered free clinics.*</p>
                     </div>
                 </div>
             </div>

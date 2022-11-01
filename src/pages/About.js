@@ -23,7 +23,7 @@ const About = () => {
                 <div className='container is-flex is-justify-content-center '>
                     
                     <div>
-                    <p className='content has-text-centered mx-6 my-3'>We are a nonprofit project founded in May 2021 to promote health and welfare among historically underserved patients by providing multilingual resources such as our doctor finder, affordable care finder, and patient guide. Our mission is to help connect patients with the affordable, culturally competent healthcare they need. We are entirely funded by two unconditional grants from <a href="https://entrepreneurship.brown.edu/resources/grants-funding/">Brown University</a>. We are overseen by an inclusive advisory board including health providers, patients, advocates, and students. If you have any suggestions or thoughts on improving our resources and programs, please
+                    <p className='content has-text-centered mx-6 my-3'>We are a nonprofit project founded in May 2021 to promote health and welfare among historically underserved patients by providing multilingual resources such as our doctor finder, affordable care finder, and patient guide. Our mission is to help connect patients with the affordable, culturally competent healthcare they need. For transparency and accountability, we provide additional information on our <a href='/finances'>finances</a>, <a href='/governance'>governance</a>, and <a href='/policies'>policies</a>. We are entirely funded by two unconditional grants from <a href="https://entrepreneurship.brown.edu/resources/grants-funding/">Brown University</a>. We are overseen by an inclusive advisory board including health providers, patients, advocates, and students. If you have any suggestions or thoughts on improving our resources and programs, please
                         <a href='/contact'> let us know!</a>
                     </p>
                         <p className='content has-text-centered mx-6'>We are grateful for the help of the <a href="https://www.npaf.org/" target='_blank' rel="noreferrer">National Patient Advocate Foundation</a>, <a href="https://www.facebook.com/studentvolunteerinterpreters/" target='_blank' rel="noreferrer">Student Volunteer Interpreters</a>, and <a href="https://www.usnews.com/" target='_blank' rel="noreferrer">U.S. News & World Report</a> in developing our primary tools, as well as our community partners throughout the United States.</p>
@@ -54,7 +54,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <p className='content has-text-centered mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our patient resources, including:</p>
+                        <p className='content has-text-centered mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our patient resources, including:
                         <ul>
                             <li>Dr. Anne Brancaccio, MD (Internal Medicine, UT Southwestern)</li>
                             <li>Arash Meghdadi</li>
@@ -81,8 +81,8 @@ const About = () => {
                             <li>Valeria Palomino</li>
                             <li>Yi-Tang Lee</li>
                             <li>Dr. Yul Ejnes, MD, MACP (Internal Medicine, Brown University)</li>
-
-                        </ul>                    
+                        </ul>
+                        </p>                    
                     </div>
                 </div>
             </div>

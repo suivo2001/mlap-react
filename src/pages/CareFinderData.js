@@ -1,13 +1,8 @@
 import React from 'react'
 
-import EnglishPdf from '../Patient-Guides/Patient-Guide-in-English.pdf'
-import FrenchPdf from '../Patient-Guides/Patient-Guide-in-French.pdf'
-import SpanishPdf from '../Patient-Guides/Patient-Guide-in-Spanish.pdf'
-import ChineseTradPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Traditional.pdf'
-import ChineseSimpPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Simplified.pdf'
 import Background from '../images/doctor-background.png'
 
-const Finances = () => {
+const CareFinderData = () => {
     return (
         <div>
             <div className='section is-medium' style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover' }}>

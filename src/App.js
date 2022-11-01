@@ -9,8 +9,12 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import PatientGuide from './pages/PatientGuide'
 import About from './pages/About'
+import Finances from './pages/Finances'
+import Governance from './pages/Governance'
+import Policies from './pages/Policies'
 import DoctorFinder from './pages/DoctorFinder'
 import CareFinder from './pages/CareFinder'
+import CareFinderData from './pages/CareFinderData'
 import Contact from './pages/Contact'
 
 function App() {

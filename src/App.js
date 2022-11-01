@@ -27,6 +27,15 @@ function App() {
           <About />
           <Footer />
         </Route>
+        <Route path='/finances'>
+          <Finances />
+        </Route>
+        <Route path='/governance'>
+          <Governance />
+        </Route>
+        <Route path='/policies'>
+          <Policies />
+        </Route>
         <Route path='/contact'>
           <Contact />
           <Footer />
@@ -37,6 +46,9 @@ function App() {
         </Route>
         <Route path='/care-finder'>
           <CareFinder />
+        </Route>
+        <Route path='/about-care-finder'>
+          <CareFinderData />
         </Route>
         <Route path='/'>
           <Home />

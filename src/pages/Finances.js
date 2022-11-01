@@ -21,4 +21,4 @@ const Finances = () => {
     )
 }
 
-export default PatientGuide
+export default Finances

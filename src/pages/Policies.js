@@ -25,4 +25,4 @@ const Policies = () => {
     )
 }
 
-export default PatientGuide
+export default Policies

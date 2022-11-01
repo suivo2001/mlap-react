@@ -21,4 +21,4 @@ const Governance = () => {
     )
 }
 
-export default PatientGuide
+export default Governance

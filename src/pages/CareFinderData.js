@@ -22,4 +22,4 @@ const CareFinderData = () => {
     )
 }
 
-export default PatientGuide
+export default CareFinderData

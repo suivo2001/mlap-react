@@ -18,11 +18,13 @@ const PatientGuide = () => {
                     <div>
                         <p className='content is-flex is-justify-content-center'>We have developed a patient guide for medical access that has been reviewed and validated by academic physicians and health researchers, available in:</p>
                         <p className='content mx-6 my-3'>
-                            <ul><a href={EnglishPdf} target='_blank' rel='noopener noreferrer'>English</a></ul>
-                            <ul><a href={SpanishPdf} target='_blank' rel='noopener noreferrer'>Español | Spanish</a></ul>
-                            <ul><a href={ChineseSimpPdf} target='_blank' rel='noopener noreferrer'>中文 (简体) | Chinese (Simplified)</a></ul>
-                            <ul><a href={ChineseTradPdf} target='_blank' rel='noopener noreferrer'>中文 (繁體) | Chinese (Traditional)</a></ul>
-                            <ul><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></ul>
+                            <ul>
+                                <li><a href={EnglishPdf} target='_blank' rel='noopener noreferrer'>English</a></li>
+                                <li><a href={SpanishPdf} target='_blank' rel='noopener noreferrer'>Español | Spanish</a></li>
+                                <li><a href={ChineseSimpPdf} target='_blank' rel='noopener noreferrer'>中文 (简体) | Chinese (Simplified)</a></li>
+                                <li><a href={ChineseTradPdf} target='_blank' rel='noopener noreferrer'>中文 (繁體) | Chinese (Traditional)</a></li>
+                                <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
+                            </ul>
                         </p>
                         <p className='content is-flex is-justify-content-center'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>

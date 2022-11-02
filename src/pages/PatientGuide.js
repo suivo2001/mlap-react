@@ -38,8 +38,9 @@ const PatientGuide = () => {
 
 class App extends React.Component {
     render() {
-      return <iframe src="https://drive.google.com/file/d/1lkrrHV_4Q02O-sWj_zMXtLEXQdATGGBh/preview" width="250" height="300"></iframe>;
+      return <iframe src="https://drive.google.com/file/d/1lkrrHV_4Q02O-sWj_zMXtLEXQdATGGBh/preview"></iframe>;
     }
 }
+ReactDOM.render(<App />, document.getElementById("container"));
 
 export default PatientGuide

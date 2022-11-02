@@ -28,6 +28,7 @@ const PatientGuide = () => {
                                 <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
                             </ul>
                         </p>
+                        <iframe src="https://drive.google.com/file/d/1lkrrHV_4Q02O-sWj_zMXtLEXQdATGGBh/preview"></iframe>
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>
@@ -35,12 +36,5 @@ const PatientGuide = () => {
         </div>
     )
 }
-
-class App extends React.Component {
-    render() {
-      return <iframe src="https://drive.google.com/file/d/1lkrrHV_4Q02O-sWj_zMXtLEXQdATGGBh/preview"></iframe>;
-    }
-}
-ReactDOM.render(<App />, document.getElementById("container"));
 
 export default PatientGuide

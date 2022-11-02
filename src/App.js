@@ -33,12 +33,15 @@ function App() {
         </Route>
         <Route path='/finances'>
           <Finances />
+          <Footer />
         </Route>
         <Route path='/governance'>
           <Governance />
+          <Footer />
         </Route>
         <Route path='/policies'>
           <Policies />
+          <Footer />
         </Route>
         <Route path='/contact'>
           <Contact />
@@ -50,13 +53,15 @@ function App() {
         </Route>
         <Route path='/care-finder'>
           <CareFinder />
+          <Footer />
         </Route>
         <Route path='/about-care-finder'>
           <CareFinderData />
+          <Footer />
         </Route>
         <Route path='/'>
           <Home />
-          <Footer />
+          <Footer /> 
         </Route>
       </Switch>
     </div>

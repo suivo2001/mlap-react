@@ -27,7 +27,6 @@ const PatientGuide = () => {
                                 <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
                             </ul>
                         </p>
-                        <iframe src="https://medliteracy.org/static/media/Patient-Guide-in-English.44fc94be.pdf"></iframe>
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>

@@ -8,6 +8,8 @@ import ChineseTradPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Tradition
 import ChineseSimpPdf from '../Patient-Guides/Patient-Guide-in-Chinese-Simplified.pdf'
 import Background from '../images/doctor-background.png'
 
+import "./styles.css";
+
 const PatientGuide = () => {
     return (
         <div>
@@ -27,9 +29,8 @@ const PatientGuide = () => {
                                 <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
                             </ul>
                         </p>
-                        <div className="all-page-container">
-                            <AllPagesPDFViewer pdf={EnglishPdf} />
-                        </div>
+                        
+                        <AllPagesPDFViewer pdf={EnglishPdf} />
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>

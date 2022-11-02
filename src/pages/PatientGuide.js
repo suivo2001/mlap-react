@@ -29,10 +29,11 @@ const PatientGuide = () => {
                                 <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
                             </ul>
                         </p>
-                        
-                        <AllPagesPDFViewer pdf={EnglishPdf} />
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
+                </div>
+                <div className="all-page-container">
+                    <AllPagesPDFViewer pdf={EnglishPdf} />
                 </div>
             </div>
         </div>

@@ -25,6 +25,9 @@ jobs:
     - name: Copy index as 404
       run: cp build/index.html build/404.html
 
+    - name: Render PDFs
+      run: npm install --save react-pdf 
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react'
 import { getDistance } from 'geolib'
 import Geocode from "react-geocode";
@@ -9,6 +9,17 @@ import Geocode from "react-geocode";
 import ClinicsJSON from '../spreadsheets/all_clinics.json'
 import ZipDictionary from '../spreadsheets/zip.json'
 import Background from '../images/doctor-background.png'
+
+const CHCJSON = []
+const FreeClinicsJSON = []
+ClinicsJSON.forEach(element => {
+    if (element[5]==="Community Health Center"){
+        CHCJSON.push(element)
+    }
+    else {
+        FreeClinicsJSON.push(element)
+    }
+});
 
 const mapKey = process.env.REACT_APP_MAP_API_KEY
 
@@ -42,14 +53,11 @@ const CareFinder = (props) => {
 
     const [currentZip, setCurrentZip] = useState('')
     const [clinicsArray, setClinicsArray] = useState([])
+    const [spreadsheet, setSpreadsheet] = useState(ClinicsJSON)
 
     const [searchWithin, setSearchWithin] = useState(9000)
 
     const [showWarning, setShowWarning] = useState(false)
-
-    useEffect(() => {
-        console.log(ClinicsJSON)
-    }, [])
 
     const onMarkerClick = (props, marker, e) => {
         console.log(props)
@@ -66,10 +74,10 @@ const CareFinder = (props) => {
     };
 
     const handleSubmit = async () => {
-
+        console.log(spreadsheet)
         if (ZipDictionary[currentZip] !== undefined) {
             let newArr = []
-            ClinicsJSON.forEach((clinic) => {
+            spreadsheet.forEach((clinic) => {
                 const compareZip = castZip(clinic[8])
 
                 if (ZipDictionary[compareZip] !== undefined && getDistance(ZipDictionary[currentZip], ZipDictionary[compareZip]) < searchWithin) {
@@ -77,6 +85,7 @@ const CareFinder = (props) => {
                 }
             })
             setClinicsArray(newArr)
+            console.log(newArr)
             if (newArr.length === 0)
                 setShowWarning(true)
             else
@@ -113,8 +122,27 @@ const CareFinder = (props) => {
                     <div className='control'>
                         <label className="label">Zip Code</label>
                         <input className="input" type="text" placeholder="ZIP Code" onChange={(e) => setCurrentZip(e.target.value)} />
+                        <label className="label mt-2">Search for</label>
+                        <div className="select">
+                            <select onChange={(e) => {
+                                
+                                if(e.target.value==3)
+                                    setSpreadsheet(CHCJSON)
+                                else if(e.target.value==2){
+                            
+                                    setSpreadsheet(FreeClinicsJSON)
+                                }
+                                else   
+                                    setSpreadsheet(ClinicsJSON)
+                                }   
+                            }>
+                                <option value={1}>Both</option>
+                                <option value={2}>Free Clinics</option>
+                                <option value={3}>Community Health Centers</option>
+                            </select>
+                        </div>
                         <label className="label mt-2">Search within</label>
-                        <div class="select">
+                        <div className="select">
                             <select onChange={(e) => setSearchWithin(e.target.value)}>
                                 <option value={9000}>5 miles</option>
                                 <option value={15 * 1600}>15 miles</option>
@@ -122,6 +150,7 @@ const CareFinder = (props) => {
                                 <option value={50 * 1600}>50 miles</option>
                             </select>
                         </div>
+                        
                         {/* eslint-disable-next-line */}
                         <a className="button is-primary ml-3" onClick={handleSubmit}>Search</a>
                     </div>

@@ -125,9 +125,10 @@ const CareFinder = (props) => {
                         <label className="label mt-2">Search for</label>
                         <div className="select">
                             <select onChange={(e) => {
-                                
+                                /* eslint-disable-next-line */
                                 if(e.target.value==3)
                                     setSpreadsheet(CHCJSON)
+                                /* eslint-disable-next-line */
                                 else if(e.target.value==2){
                             
                                     setSpreadsheet(FreeClinicsJSON)

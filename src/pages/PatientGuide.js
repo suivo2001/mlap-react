@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
 import EnglishPdf from '../Patient-Guides/Patient-Guide-in-English.pdf'
 import FrenchPdf from '../Patient-Guides/Patient-Guide-in-French.pdf'
@@ -30,10 +31,15 @@ const PatientGuide = () => {
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>
-                
             </div>
         </div>
     )
+}
+
+class App extends React.Component {
+    render() {
+      return <iframe src="https://drive.google.com/file/d/1lkrrHV_4Q02O-sWj_zMXtLEXQdATGGBh/preview" width="250" height="300"></iframe>;
+    }
 }
 
 export default PatientGuide

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Document, Page } from 'react-pdf';
+import AllPagesPDFViewer from "./components/pdf/all-pages";
 
 import EnglishPdf from '../Patient-Guides/Patient-Guide-in-English.pdf'
 import FrenchPdf from '../Patient-Guides/Patient-Guide-in-French.pdf'

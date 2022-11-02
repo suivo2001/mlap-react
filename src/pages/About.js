@@ -53,7 +53,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <p className='content has-text-centered mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our patient resources, including:
+                        <p className='content mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our patient resources, including:
                         <ul>
                             <li>Dr. Anne Brancaccio, MD (Internal Medicine, UT Southwestern)</li>
                             <li>Arash Meghdadi</li>

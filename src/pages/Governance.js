@@ -13,7 +13,7 @@ const Governance = () => {
                     <div>
                         <p className='content is-flex is-justify-content-center'>Our directors meet virtually each month to discuss maintenance of existing consumer health resources and ongoing efforts to translate additional resources and expand community outreach, and additionally on an ad hoc basis. We also solicit advice from our advisors on an ongoing basis for projects in their area of specialty.</p>
                         <p className='content is-flex is-justify-content-center'>We are a nonprofit project, not a nonprofit organization. Based on advice from the Swearer Center for Public Service and the Rhode Island Foundation, we decided against incorporation. As a nonprofit project, we are fully able to achieve all of our goals, and we hold ourselves to the same standard of transparency and accountability expected of any nonprofit organization.</p>
-                        <p className='content is-flex is-justify-content-center'>Please <a href='/contact'>  contact us  </a> if you have any order of business that you would like the board to discuss.</p>
+                        <p className='content has-text-centered mx-6'>Please <a href='/contact'>  contact us  </a> if you have any order of business that you would like the board to discuss.</p>
                         <p className='content mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our resources, including:
                         <ul>
                             <li>Dr. Anne Brancaccio, MD (Internal Medicine, UT Southwestern)</li>

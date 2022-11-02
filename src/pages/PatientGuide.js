@@ -16,7 +16,7 @@ const PatientGuide = () => {
             <div className='section'>
                 <div className='container is-flex is-justify-content-center'>
                     <div>
-                        <p className='content is-flex is-justify-content-center'>We have developed a patient guide for medical access that has been reviewed and validated by academic physicians and health researchers, available in:</p>
+                        <p className='content has-text-centered mx-6'>We have developed a patient guide for medical access that has been reviewed and validated by academic physicians and health researchers, available in:</p>
                         <p className='content mx-6 my-3'>
                             <ul>
                                 <li><a href={EnglishPdf} target='_blank' rel='noopener noreferrer'>English</a></li>
@@ -26,7 +26,7 @@ const PatientGuide = () => {
                                 <li><a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a></li>
                             </ul>
                         </p>
-                        <p className='content is-flex is-justify-content-center'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
+                        <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
                     </div>
                 </div>
             </div>

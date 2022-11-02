@@ -16,9 +16,9 @@ const PatientGuide = () => {
             <div className='section'>
                 <div className='container is-flex is-justify-content-center'>
                     <div>
-                        <p className='content has-text-centered mx-6'>We have developed a patient guide for medical access that has been reviewed and validated by academic physicians and health researchers, available in: <a href={EnglishPdf} target='_blank' rel='noopener noreferrer'>English</a>, <a href={SpanishPdf} target='_blank' rel='noopener noreferrer'>Español | Spanish</a>, <a href={ChineseSimpPdf} target='_blank' rel='noopener noreferrer'>中文 (简体) | Chinese (Simplified)</a>, <a href={ChineseTradPdf} target='_blank' rel='noopener noreferrer'>中文 (繁體) | Chinese (Traditional)</a>, and <a href={FrenchPdf} target='_blank' rel='noopener noreferrer'>Français | French</a>.</p>
+                        <p className='content has-text-centered mx-6'>We have developed a patient guide for medical access that has been reviewed and validated by academic physicians and health researchers, available in <a href={EnglishPdf}>English</a>, <a href={SpanishPdf}>Español | Spanish</a>, <a href={ChineseSimpPdf}>中文 (简体) | Chinese (Simplified)</a>, <a href={ChineseTradPdf}>中文 (繁體) | Chinese (Traditional)</a>, and <a href={FrenchPdf}>Français | French</a>.</p>
                         <p className='content has-text-centered mx-6'>Our guides were written and revised in accordance with the guidelines and criteria of the International Patient Decision Aid Standards Collaboration.</p>
-                        <iframe src="https://medliteracy.org/static/media/Patient-Guide-in-English.44fc94be.pdf" height="200" width="300"></iframe>
+                        <iframe src="https://medliteracy.org/static/media/Patient-Guide-in-English.44fc94be.pdf" height="500" width="400"></iframe>
                     </div>
                 </div>
             </div>

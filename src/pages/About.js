@@ -56,20 +56,25 @@ const About = () => {
                         <p className='content mx-6 my-3'>We are thankful for our physician and patient advisors from across the United States who review our patient resources, including:
                         <ul>
                             <li>Dr. Anne Brancaccio, MD (Internal Medicine, UT Southwestern)</li>
+                            <li>Dr. Anton Camaj, MD, MS (Cardiology, Mount Sinai Hospital)</li>
                             <li>Arash Meghdadi</li>
                             <li>Dr. Aravind Kokkirala, MD (Cardiology, Brown University)</li>
                             <li>Dr. Chi-Ying (Roy) Lin, MD, MPH (Neurology, Baylor College of Medicine)</li>
                             <li>Christian Zhao</li>
                             <li>Dongyue Xie</li>
                             <li>Dr. Emil Stefan Vutescu, MD (Orthopedic Surgery, Brown University)</li>
+                            <li>George Obri</li>
                             <li>Dr. Hanan Khalil, MD (Diagnostic Imaging, Brown University)</li>
                             <li>Dr. J. Austin Lee, MD, MPH (Emergency Medicine, Brown University)</li>
+                            <li>Janeva Shahi</li>
                             <li>Dr. Lance Truong, DO (Pathology, Brown University)</li>
                             <li>Dr. Luca Bartolini, MD (Pediatrics & Neurology, Brown University)</li>
                             <li>Dr. Michael Vezeridis, MD (Surgery, Brown University)</li>
                             <li>Dr. Qiangjun Cai, MD (Internal Medicine, UT Medical Branch)</li>
+                            <li>Dr. Puneet Garcham, MD, MBA (Pulmonary Medicine, Baylor College of Medicine)</li>
                             <li>Dr. Renata Dalla Costa, MD (Dermatology, Brown University)</li>
                             <li>Dr. Robert Rohrbaugh, MD (Global Health Education & Psychiatry, Yale University)</li>
+                            <li>Sana Mhish</li>
                             <li>Shenglei Sun</li>
                             <li>Sheue-Shya Wang</li>
                             <li>Dr. Sina Noshad, MD, MPH, PhD (Epidemiology, Brown University)</li>

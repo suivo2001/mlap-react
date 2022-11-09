@@ -46,7 +46,9 @@ const languageDict = {
     russian: 11,
     arabic: 12,
     romanian: 13,
-    greek: 14
+    greek: 14,
+    punjabi: 15,
+    albanian: 16
 }
 
 
@@ -96,33 +98,37 @@ const DoctorFinder = () => {
             </div>
             <div className='section has-background-light'>
                 <div className='container is-flex is-justify-content-center '>
-                    <p className='content has-text-centered mx-6 my-3'>We provide this tool in 14 languagues:
+                    <p className='content has-text-centered mx-6 my-3'>We provide this tool in 16 physician-approved languagues:
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("arabic")}> عربى, </a>
+                        <a onClick={() => setPageLanguage("albanian")}> Albanian | Shqip, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体), </a>                  
+                        <a onClick={() => setPageLanguage("arabic")}> Arabic | عربى, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體), </a>
+                        <a onClick={() => setPageLanguage("chinese_simp")}> Chinese | 中文 (简体), </a>                  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("french")}> Français, </a>
+                        <a onClick={() => setPageLanguage("chinese_trad")}> Chinese | 中文 (繁體), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("greek")}> Ελληνικά, </a>
+                        <a onClick={() => setPageLanguage("french")}> French | Français, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("italian")}> Italiano, </a>
+                        <a onClick={() => setPageLanguage("greek")}> Greek | Ελληνικά, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("persian")}> فارسی, </a>  
+                        <a onClick={() => setPageLanguage("italian")}> Italian | Italiano, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("portuguese")}> Português, </a>
+                        <a onClick={() => setPageLanguage("persian")}> Persian | فارسی, </a>  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("romanian")}> Română, </a>
+                        <a onClick={() => setPageLanguage("portuguese")}> Portuguese | Português, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("russian")}> русский, </a>
+                        <a onClick={() => setPageLanguage("punjabi")}> Punjabi | ਪੰਜਾਬੀ, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("spanish")}> Español, </a>
+                        <a onClick={() => setPageLanguage("romanian")}> Romanian | Română, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("telugu")}> తెలుగు. </a>
+                        <a onClick={() => setPageLanguage("russian")}> Russian | русский, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("spanish")}> Spanish | Español, </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("telugu")}> Telugu | తెలుగు. </a>
                         and
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>

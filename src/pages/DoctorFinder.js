@@ -102,33 +102,33 @@ const DoctorFinder = () => {
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("albanian")}> Albanian | Shqip, </a>
+                        <a onClick={() => setPageLanguage("albanian")}> Albanian • Shqip, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("arabic")}> Arabic | عربى, </a>
+                        <a onClick={() => setPageLanguage("arabic")}> Arabic • عربى, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_simp")}> Chinese | 中文 (简体), </a>                  
+                        <a onClick={() => setPageLanguage("chinese_simp")}> Chinese • 中文 (简体), </a>                  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_trad")}> Chinese | 中文 (繁體), </a>
+                        <a onClick={() => setPageLanguage("chinese_trad")}> Chinese • 中文 (繁體), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("french")}> French | Français, </a>
+                        <a onClick={() => setPageLanguage("french")}> French • Français, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("greek")}> Greek | Ελληνικά, </a>
+                        <a onClick={() => setPageLanguage("greek")}> Greek • Ελληνικά, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("italian")}> Italian | Italiano, </a>
+                        <a onClick={() => setPageLanguage("italian")}> Italian • Italiano, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("persian")}> Persian | فارسی, </a>  
+                        <a onClick={() => setPageLanguage("persian")}> Persian • فارسی, </a>  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("portuguese")}> Portuguese | Português, </a>
+                        <a onClick={() => setPageLanguage("portuguese")}> Portuguese • Português, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("punjabi")}> Punjabi | ਪੰਜਾਬੀ, </a>
+                        <a onClick={() => setPageLanguage("punjabi")}> Punjabi • ਪੰਜਾਬੀ, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("romanian")}> Romanian | Română, </a>
+                        <a onClick={() => setPageLanguage("romanian")}> Romanian • Română, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("russian")}> Russian | русский, </a>
+                        <a onClick={() => setPageLanguage("russian")}> Russian • русский, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("spanish")}> Spanish | Español, </a>
+                        <a onClick={() => setPageLanguage("spanish")}> Spanish • Español, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("telugu")}> Telugu | తెలుగు. </a>
+                        <a onClick={() => setPageLanguage("telugu")}> Telugu • తెలుగు. </a>
                         and
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>

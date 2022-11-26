@@ -102,36 +102,36 @@ const DoctorFinder = () => {
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("english")}> English, </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("albanian")}> Albanian • Shqip, </a>
+                        <a onClick={() => setPageLanguage("albanian")}> Shqip (Albanian), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("arabic")}> Arabic • عربى, </a>
+                        <a onClick={() => setPageLanguage("arabic")}> عربى (Arabic), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_simp")}> Chinese • 中文 (简体), </a>                  
+                        <a onClick={() => setPageLanguage("chinese_simp")}> 中文 (简体; Chinese Simplified), </a>                  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("chinese_trad")}> Chinese • 中文 (繁體), </a>
+                        <a onClick={() => setPageLanguage("chinese_trad")}> 中文 (繁體; Chinese Traditional), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("french")}> French • Français, </a>
+                        <a onClick={() => setPageLanguage("french")}> Français (French), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("greek")}> Greek • Ελληνικά, </a>
+                        <a onClick={() => setPageLanguage("greek")}> Ελληνικά (Greek), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("italian")}> Italian • Italiano, </a>
+                        <a onClick={() => setPageLanguage("italian")}> Italiano (Italian), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("persian")}> Persian • فارسی, </a>  
+                        <a onClick={() => setPageLanguage("persian")}> فارسی (Persian), </a>  
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("portuguese")}> Portuguese • Português, </a>
+                        <a onClick={() => setPageLanguage("portuguese")}> Português (Portuguese), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("punjabi")}> Punjabi • ਪੰਜਾਬੀ, </a>
+                        <a onClick={() => setPageLanguage("punjabi")}> ਪੰਜਾਬੀ (Punjabi), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("romanian")}> Romanian • Română, </a>
+                        <a onClick={() => setPageLanguage("romanian")}> Română (Romanian), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("russian")}> Russian • русский, </a>
+                        <a onClick={() => setPageLanguage("russian")}> русский (Russian), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("spanish")}> Spanish • Español, </a>
+                        <a onClick={() => setPageLanguage("spanish")}> Español (Spanish), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("telugu")}> Telugu • తెలుగు. </a>
+                        <a onClick={() => setPageLanguage("telugu")}> తెలుగు (Telugu). </a>
                         and
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt. </a>
+                        <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt (Vietnamese). </a>
                     </p>
                 </div>
             </div>

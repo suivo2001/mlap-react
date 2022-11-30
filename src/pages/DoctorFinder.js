@@ -48,7 +48,8 @@ const languageDict = {
     romanian: 13,
     greek: 14,
     punjabi: 15,
-    albanian: 16
+    albanian: 16,
+    tamil: 17
 }
 
 
@@ -128,7 +129,9 @@ const DoctorFinder = () => {
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("spanish")}> Español (Spanish), </a>
                         {/* eslint-disable-next-line */}
-                        <a onClick={() => setPageLanguage("telugu")}> తెలుగు (Telugu). </a>
+                        <a onClick={() => setPageLanguage("telugu")}> தமிழ் (Tamil), </a>
+                        {/* eslint-disable-next-line */}
+                        <a onClick={() => setPageLanguage("telugu")}> తెలుగు (Telugu), </a>
                         and
                         {/* eslint-disable-next-line */}
                         <a onClick={() => setPageLanguage("vietnamese")}> Tiếng Việt (Vietnamese). </a>

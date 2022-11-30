@@ -285,6 +285,25 @@
         "reviewers": "ਸਮੀਖਿਅਕ: Puneet Garcham, MD, MBA (Pulmonary Medicine, Baylor College of Medicine)",
         "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    
     },
+    "tamil": {
+        "doctor_finder": "மருத்துவர் தேடல்",
+        "select": "தேர்ந்தெடுக்கவும்",
+        "specialty": "சிறப்புத் தன்மை",
+        "language": "மொழி",
+        "gender": "மருத்துவர் பாலினம்",
+        "no_preference": "பாலினம் முன்னுரிமை இல்லை",
+        "male": "ஆண்",
+        "female": "பெண்",
+        "location_type": "இடம்",
+        "state_and_city": "நகரம், மாநிலம்",
+        "zip_code": "அஞ்சல் குறியீடு",
+        "state": "மாநிலம்",
+        "city": "நகரம்",
+        "search": "தேடல்",
+        "translator": "மொழிபெயர்ப்பாளர்: Ramiya Velupillai (Student Volunteer Interpreters), Deanuja Muthukumaru (Student Volunteer Interpreters), Nirujah Muthukumaru (Student Volunteer Interpreters)",
+        "reviewers": "விமர்சகர்: Rajkumar Venkatramani, MD (Oncology, Baylor College of Medicine)",
+        "disclaimer": "Disclaimer: Medical Literacy and Access Project has no financial or other interests to disclose."    
+    },
     "albanian": {
         "doctor_finder": "Gjeni një Doktor",
         "select": "Zgjedh",

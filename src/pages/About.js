@@ -35,19 +35,19 @@ const About = () => {
                         <p className='content is-flex is-justify-content-center'>Here is our board of directors:</p>
                         <div className='columns'>
                             <div className='column'>
-                                <PeopleCard name='John Lin' location="Brown University" content="Executive Director" image={JohnLinImage} />
+                                <PeopleCard name='John Lin' location="University of Pennsylvania" content="Executive Director" image={JohnLinImage} />
                                 <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
-                                <PeopleCard name='Ivo Su' location="Brown University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
+                                <PeopleCard name='Ivo Su' location="Vanderbilt University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
 
                             <div className='column'>
-                                <PeopleCard name='Manusree Bhatter' location="UT Dallas" content="Director for Telugu Services" image={ManusreeBhatterImage} />
+                                <PeopleCard name='Manusree Bhatter' location="Texas A&M University" content="Director for Telugu Services" image={ManusreeBhatterImage} />
                                 <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
                                 <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
                                 
                             </div>
                             <div className='column'>
-                                <PeopleCard name='Jason Lin' location="UT Southwestern" content="Chair, Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='Jason Lin' location="UT Houston" content="Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
                                 <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
                             </div>

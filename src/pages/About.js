@@ -5,7 +5,7 @@ import PeopleCard from '../components/PeopleCard'
 import JohnLinImage from '../images/John-Lin.jpeg'
 import JasonLinImage from '../images/Jason-Lin.jpeg'
 import MariaChiaramonteImage from '../images/Maria-Chiaramonte.jpg'
-import DanielWangImage from '../images/Daniel-Wang.jpeg'
+import ChilseaWangImage from '../images/Chilsea-Wang.jpg'
 import CobyNguyenImage from '../images/Coby-Nguyen.jpeg'
 import MiaWilliamsImage from '../images/Mia-Williams.JPG'
 import SinaNoshadjamalImage from '../images/Sina-Noshadjamal.png'
@@ -36,20 +36,20 @@ const About = () => {
                         <div className='columns'>
                             <div className='column'>
                                 <PeopleCard name='John Lin' location="University of Pennsylvania" content="Executive Director" image={JohnLinImage} />
-                                <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
+                                <PeopleCard name='María Chiaramonte' location="Princeton University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
                                 <PeopleCard name='Ivo Su' location="Vanderbilt University" content="Webmaster, Director for Portuguese Services" image={IvoSuImage} />
                             </div>
 
                             <div className='column'>
+                                <PeopleCard name='Chilsea Wang' location="Brown University" content="Director of Project Development" image={ChilseaWangImage} />
                                 <PeopleCard name='Manusree Bhatter' location="Texas A&M University" content="Director for Telugu Services" image={ManusreeBhatterImage} />
-                                <PeopleCard name='Daniel Wang' location="Texas A&M University" content="Director for Digital Services" image={DanielWangImage} />
                                 <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
                                 
                             </div>
                             <div className='column'>
-                                <PeopleCard name='Jason Lin' location="UT Houston" content="Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='Jason Lin' location="UTHealth Houston" content="Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
-                                <PeopleCard name='María Chiaramonte' location="Brown University" content="Director for Spanish Services" image={MariaChiaramonteImage} />
+                                <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
                             </div>
                         </div>
 

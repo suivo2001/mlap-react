@@ -53,6 +53,7 @@ function App() {
         </Route>
         <Route path='/care-finder'>
           <CareFinder />
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <Footer />
         </Route>
         <Route path='/about-care-finder'>

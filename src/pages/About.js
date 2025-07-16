@@ -41,13 +41,13 @@ const About = () => {
                             </div>
 
                             <div className='column'>
-                                <PeopleCard name='Chilsea Wang' location="Brown University" content="Director of Project Development" image={ChilseaWangImage} />
                                 <PeopleCard name='Manusree Bhatter' location="Texas A&M University" content="Director for Telugu Services" image={ManusreeBhatterImage} />
+                                <PeopleCard name='Chilsea Wang' location="Brown University" content="Director of Project Development" image={ChilseaWangImage} />
                                 <PeopleCard name='Sina Noshadjamal' location="Brown University" content="Director for Farsi Services" image={SinaNoshadjamalImage} />
                                 
                             </div>
                             <div className='column'>
-                                <PeopleCard name='Jason Lin' location="UTHealth Houston" content="Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='Jason Lin' location="UTHealth Houston" content="President, Director for Chinese Services" image={JasonLinImage} />
                                 <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
                                 <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
                             </div>
@@ -83,7 +83,7 @@ const About = () => {
                             <li>Dr. Tatiana Bakaeva, MD (Ophthalmology, Brown University)</li>
                             <li>Dr. Thamara Davis, MD (Psychiatry, Brown University)</li>
                             <li>Valeria Palomino</li>
-                            <li>Yi-Tang Lee</li>
+                            <li>Dr. Yi-Tang Lee, PhD (University of Wisconsin)</li>
                             <li>Dr. Yul Ejnes, MD, MACP (Internal Medicine, Brown University)</li>
                         </ul>
                         </p>                    

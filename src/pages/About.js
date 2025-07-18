@@ -47,7 +47,7 @@ const About = () => {
                                 
                             </div>
                             <div className='column'>
-                                <PeopleCard name='Jason Lin' location="UTHealth Houston" content="President, Director for Chinese Services" image={JasonLinImage} />
+                                <PeopleCard name='Jason Lin' location="UTHealth Houston" content="Board Chair, Director of Services" image={JasonLinImage} />
                                 <PeopleCard name='Coby Nguyen' location="UC Berkeley" content="Director for Vietnamese Services" image={CobyNguyenImage} />
                                 <PeopleCard name='Mia Williams' location="Brown University" content="Director for French Services" image={MiaWilliamsImage} />
                             </div>
